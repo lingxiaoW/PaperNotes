@@ -358,6 +358,10 @@
         - Design a reward to penalize getting stuck.
         - Use off-policy RL to update its learned behavior: the system learn from interactions with the environment in practice laps, using a batch of new interaction sto update its learned behavior. 
         - Training policy is RLPD, a data-efficient off-policy RL algorithm that trains an ensemble of critics to avoid catastrophic overestimation. 
+        <p align="center">
+        <img src="./../images/fastrl_network.png" width="50%">
+        </p>
+         
         - The inference of the trained policy is at 10Hz. 
       - **Representation Learning with Offline RL (Purple)**:
         - Pre-train an encoder to process visual observation to calculate a critic value.
