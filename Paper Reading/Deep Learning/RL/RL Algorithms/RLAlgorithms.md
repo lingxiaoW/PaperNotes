@@ -5,6 +5,8 @@
 - **Decision Transformer Reinforcement Learning via Sequence Modeling**
  **[`arXiv 2021`]** *Lili Chen, Kevin Lu, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Michael Laskin, Pieter Abbeel, Aravind Srinivas, Igor Mordatch* [(arXiv)](http://arxiv.org/abs/2106.01345) [(pdf)](./Decision%20Transformer%20-%20Reinforcement%20Learning%20via%20Sequence%20Modeling.pdf) (Citation: 686)
 
+- **Q-Transformer: Scalable Offline Reinforcement Learning via Autoregressive Q-Functions** [(pdf)](./Q-transformer.pdf) (Citation: 480)
+
 
 ## Deep RL Algorithms
 
@@ -45,6 +47,9 @@
  - **Soft Actor-Critic Off-Policy Maximum Entropy Deep Reinforcement
   Learning with a Stochastic Actor**
  **[`ICML 2018`]** *Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine* [(arXiv)](http://arxiv.org/abs/1801.01290) [(pdf)](./Soft%20Actor-Critic%20Off-Policy%20Maximum%20Entropy%20Deep%20Reinforcement%20Learning%20with%20a%20Stochastic%20Actor.pdf) (Citation: 6088)
+
+ - **Offline Reinforcement Learning with Implicit Q-Learning**
+ **[`arXiv 2021`]** *Ilya Kostrikov, Ashvin Nair, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2110.06169) [(pdf)](./implicit%20Q%20leanring.pdf) (Citation: 467)
 
 
 

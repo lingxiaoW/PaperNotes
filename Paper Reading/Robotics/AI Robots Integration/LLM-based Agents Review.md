@@ -2,9 +2,9 @@
 
 - **The Rise and Potential of Large Language Model Based Agents A Survey**
  **[`arXiv 2023`]** *Zhiheng Xi, Wenxiang Chen* [(arXiv)](http://arxiv.org/abs/2309.07864) [(pdf)](./The%20Rise%20and%20Potential%20of%20Large%20Language%20Model%20Based%20Agents%20-%20A%20Survey.pdf) (Citation: 22)
-  - Large Language Model-based Agents:
+  - **Large Language Model-based Agents**:
     - Employ LLMs as the primary component of brain or controller of these agents and expand their perceptual and action space through strategies such as multimodal perception and tool utilization. 
-  - Why is LLM suitable as the primary component of an Agent's brain?
+  - **Why is LLM suitable as the primary component of an Agent's brain?**
     - Autonomy
       - LLMs demonstrate autonomy throught their ability to generate human-like text, engage in conversations, and perform tassk without detailed step-by-step instructions.
       - Dynamically adjust their outputs based on environmental inputs
@@ -19,7 +19,7 @@
       - LLMs can reason, make plans, and take proactive measures in their actions to achieve specific goals or adapt to environmental changes. 
     - Social Ability: the capacity to interact with other agents
       - Agent-human interaction 
-  - Framework of LLM-based agent
+  - **Framework of LLM-based agent**
     ![llm_agent](./../images/llm-based_agent.png)
     - Brain
       - Store knowledge and memories
@@ -32,7 +32,7 @@
       - Emobodied action ability and tool-handling skills
 
 
-  - Brain
+  - **Brain**
     - The ability to engage in natural language interaction is important to ensure effective communication.
     - After receiving the information processed by the perception module, the brain first turns to storage, retrieving in **knowledge** and recalling from **memory**.
       - **Knowledge** is from training data. Large-scale dataset can encode a wide range of knowledge into their parameters and respond correctly to various types of queries.
@@ -88,4 +88,56 @@
 
 - **Large Language Models for Robotics A Survey**
  **[`arXiv 2023`]** *Fanlong Zeng, Wensheng Gan, Yongheng Wang, Ning Liu, Philip S. Yu* [(arXiv)](http://arxiv.org/abs/2311.07226) [(pdf)](./Large%20Language%20Models%20for%20Robotics%20-%20A%20Survey.pdf) (Citation: 9)
- - 
+ 
+ 
+
+
+
+<br />
+
+- **Vision-and-Language Navigation A Survey of Tasks Methods and Future
+  Directions**
+ **[`arXiv 2022`]** *Jing Gu, Eliana Stefani, Qi Wu, Jesse Thomason, Xin Eric Wang* [(arXiv)](http://arxiv.org/abs/2203.12667) [(pdf)](./Vision-and-Language%20Navigation%20-%20A%20Survey%20of%20Tasks,%20Methods,%20and%20Future%20Directions.pdf) (Citation: 70)
+
+  <p align="center">
+  <img src="./../images/vln_survey_overview.png" width="50%">
+  </p>
+
+  - **Challenges in Vision-Language-Navigation Models**:
+    - VLN faces a complex environmetn and requires effective understanding and alignment of information from different modalities. 
+    - VLN agents require a reasoning startegy for the navigation process.  
+    - The generalization of a model trained in seen enviornmnets to unseen environments is also essential. 
+  - **Evaluation**:
+    - Goal-oriented metrics:
+      - Success rate, 
+      - Goal progress (remaining distance to the target goal),
+      - Path length (total length of the navigation path),
+      - Shortest-Path Distance (mean distance between the agent's final location and the goal). 
+  - **Solution to VLN**:
+
+    <p align="center">
+    <img src="./../images/vln_survey.png" width="60%">
+    </p>
+
+    - **Representation learning** methods help understand information from different modalities
+      - Pretained LLM: 
+        - VLA Model: ViLBERT
+        - VLN Models: VLN-BERT pretrains navigation models to measure the compatibility between paths and instructions, formting VLN as a path selection problem.
+      - Semantic Understanding
+      - Graph Representation
+        - Building graph to incorporate structured information from instruction and environment observation provides explicit semnatic relation to guide the navigation.  
+    - **Action strategy learning** aims to make reasonable decisions based on gathered information
+      - Reinforcement Learning: VLN is a sequential decision-making problem. But the problem of RL for VLN is that VLN agents only receive the success signal at the end of the episode (sparse reward).
+      - Exploration during Navigation
+      - Navigation Planning
+      - Asking for help: ask humans for help when uncertain about the next action. 
+    - **Data-centric learning methods** effectively utilize the existing data and address data challenges such as data scarcity
+      - Data Augmentation: Trajectory-instruction augmentation
+      - Environment augmentation: randomly masking the same visual feature across different view points
+      - Curriculum Learning: gradually increases the task's difficulty during the training process
+      - Multitask Learning: Different VLN tasks can benefit from each other by cross-task knowledge transfer. 
+      - Instruction Interpretation: break down long instruction into short and more concise instructions.
+    - **Prior exploration** helps the model familiarize itself with the test environment. 
+      - Previous exploration methods allow the agent to observe and adapt to unseen environments, bring the gap between seen and unseen environments. 
+
+
