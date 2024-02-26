@@ -239,6 +239,70 @@
  **[`arXiv 2023`]** *Liang Chen, Yichi Zhang, Shuhuai Ren, Haozhe Zhao, Zefan Cai, Yuchi Wang, Peiyi Wang, Tianyu Liu, Baobao Chang* [(arXiv)](http://arxiv.org/abs/2310.02071) [(pdf)](./Towards%20End-to-End%20Embodied%20Decision%20Making%20via%20Multi-modal%20Large%20Language%20Model%20-%20Explorations%20with%20GPT4-Vision%20and%20Beyond.pdf) (Citation: 0)
 
 
+ <br>
+
+ - **VoxPoser Composable 3D Value Maps for Robotic Manipulation with
+  Language Models**
+ **[`arXiv 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) (Citation: 98)
+
+<br>
+
+- **Code as Policies Language Model Programs for Embodied Control**
+ **[`arXiv 2022`]** *Jacky Liang, Wenlong Huang, Fei Xia, Peng Xu, Karol Hausman, Brian Ichter, Pete Florence, Andy Zeng* [(arXiv)](http://arxiv.org/abs/2209.07753) [(pdf)](./Code%20as%20Policies%20Language%20Model%20Programs%20for%20Embodied%20Control.pdf) (Citation: 300)
+
+  <p align="center">
+  <img src="./../images/code_as_policy.png" width="80%">
+  </p>
+
+  - **Objective**:
+    - The goal is to generate robot policy code from natural language commands
+    - LLMs, which have been previously used for synthesizing simple Python programs from docstrings, are repurposed for this purpose.
+  - **Methodology:**
+    - The authors propose code as policies, a formulation where language model generated programs (LMPs) represent reactive policies (e.g., impedance controllers) and waypoint-based policies (such as vision-based pick-and-place or trajectory-based control).
+    - These policies are demonstrated across multiple real robot platforms.
+  - **How It Works:**
+    - Given example language commands (formatted as comments) followed by corresponding policy code, LLMs autonomously re-compose API calls to generate new policy code.
+    - LLMs chain classic logic structures and reference third-party libraries (e.g., NumPy, Shapely) to perform arithmetic.
+  - **The resulting robot policies:**
+    - Exhibit spatial-geometric reasoning.
+    - Generalize to new instructions.
+    - Precisely prescribe values (e.g., velocities) based on context (i.e., behavioral commonsense).
+  - **Key Contributions:**
+    - Hierarchical code-gen: Recursively defining undefined functions allows LLMs to write more complex code.
+    - Improved state-of-the-art performance on the HumanEval benchmark by solving 39.8% of problems.
+
+<br >
+
+- **Voyager An Open-Ended Embodied Agent with Large Language Models**
+ **[`arXiv 2023`]** *Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar* [(arXiv)](http://arxiv.org/abs/2305.16291) [(pdf)](./Voyager%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models.pdf) (Citation: 254)
+
+  - **What is Voyager?**
+    - **Voyager** is the **first LLM-powered embodied lifelong learning agent** that operates within the virtual realm of **Minecraft**.
+    - It continuously **explores the Minecraft world**, acquires a diverse range of skills, and makes novel discoveries—all without any human intervention.
+
+  - **Key Components of Voyager:**
+    - **Automatic Curriculum**: Voyager employs an **automatic curriculum** that maximizes exploration. This ensures that it constantly seeks out new experiences and challenges.
+    - **Skill Library**: The agent maintains an **ever-growing skill library** containing executable code for storing and retrieving complex behaviors. These skills empower Voyager to perform various tasks.
+    - **Iterative Prompting Mechanism**: Voyager's **new iterative prompting mechanism** incorporates environment feedback, execution errors, and self-verification. This mechanism continually improves the agent's programs and abilities.
+
+  - **Interaction with GPT-4**:
+    - Voyager communicates with **GPT-4** via **blackbox queries**, bypassing the need for fine-tuning model parameters. This efficient interaction allows Voyager to leverage GPT-4's language capabilities without extensive training.
+
+  - **Impressive Abilities**:
+    - **In-Context Lifelong Learning**: Empirically, Voyager demonstrates **strong in-context lifelong learning capability**.
+    - **Minecraft Proficiency**: Voyager excels at playing Minecraft, achieving remarkable feats:
+      - Obtaining **3.3 times more unique items**.
+      - Traveling **2.3 times longer distances**.
+      - Unlocking key tech tree milestones up to **15.3 times faster** than prior state-of-the-art methods.
+
+  - **Generalization Across Worlds**:
+    - Voyager's skills are **temporally extended, interpretable, and compositional**. This allows it to **utilize the learned skill library** even in a **new Minecraft world**, solving novel tasks from scratch—a feat that other techniques struggle to achieve.
+
+
+---
+
+
+
 ## Prompt Engineering
 
 - **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models**
@@ -247,6 +311,24 @@
   ![Chain-of-Thought](./../images/chain-of-thought.png)
   - Decompose the problem into intermediate steps and solve each before giving the final answer.
   - In the above fiture, the blue highlighted answer is also model input, which teaches the model to think step by step.
+
+
+## In Context Learning
+
+- **A Survey on In-context Learning**
+ **[`arXiv 2022`]** *Qingxiu Dong, Lei Li, Damai Dai, Ce Zheng, Zhiyong Wu, Baobao Chang, Xu Sun, Jingjing Xu, Lei Li, Zhifang Sui* [(arXiv)](http://arxiv.org/abs/2301.00234) [(pdf)](./A%20Survey%20on%20In-context%20Learning.pdf) (Citation: 445)
+  - **Definition of ICL:**
+    - ICL involves training large language models (LLMs) to make predictions based solely on contexts augmented with a few examples. Essentially, it’s about learning from a limited set of contextually relevant instances12.
+    - This approach has gained prominence due to the increasing capabilities of LLMs.
+  - **Advanced Techniques in ICL**:
+    - **Training Strategies:** Researchers explore various methods to enhance ICL. These strategies impact how LLMs learn from context and examples.
+    - **Demonstration Designing Strategies:** Crafting effective demonstrations (examples) within the context is crucial. Researchers investigate optimal ways to present these examples.
+    - **Related Analysis:** Understanding the interplay between context, examples, and model predictions is essential. Researchers analyze the effectiveness of ICL approaches.
+  - **Challenges and Future Directions:**
+    - Despite progress, challenges remain. Researchers grapple with questions like:
+      - How does ICL work?
+      - How can we improve ICL?
+    - Future research should focus on unraveling the mechanisms behind ICL and enhancing its efficacy.
 
 
 ## Vision-based Navigation

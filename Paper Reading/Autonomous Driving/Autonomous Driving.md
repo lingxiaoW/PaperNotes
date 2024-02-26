@@ -1,5 +1,42 @@
 # Autonomous Driving 
 
+### Review Articles
+- **A Survey on Multimodal Large Language Models for Autonomous Driving** [(pdf)](./LLM-based%20AD/A%20Survey%20on%20Multimodal%20Large%20Language%20Models%20for%20Autonomous%20Driving.pdf)
+  - Problems of DL for autonomous driving:
+    - Edge cases: extreme weather, bad lighting conditions, or rare situations
+    - DNN often be considered as a black box
+
+
+
+### RL based
+
+- **DQ-GAT Towards Safe and Efficient Autonomous Driving with Deep
+  Q-Learning and Graph Attention Networks**
+ **[`arXiv 2021`]** *Peide Cai, Hengli Wang, Yuxiang Sun, Ming Liu* [(arXiv)](http://arxiv.org/abs/2108.05030) [(pdf)](./RL-based/DQ-GAT_Towards_Safe_and_Efficient_Autonomous_Driving_With_Deep_Q-Learning_and_Graph_Attention_Networks.pdf) (Citation: 21)
+  - Simultion-based and RL-based interaction control algorithm
+
+<br />
+
+- **Learning to Drive in a Day**
+ **[`arXiv 2018`]** *Alex Kendall, Jeffrey Hawke, David Janz, Przemyslaw Mazur, Daniele Reda, John-Mark Allen, Vinh-Dieu Lam, Alex Bewley, Amar Shah* [(arXiv)](http://arxiv.org/abs/1807.00412) [(pdf)](./RL-based/Learning%20to%20Drive%20a%20Day.pdf) (Citation:666)
+  - End-2-End (Vision-2-Control) Driving model, training with DDPG
+  - Trained in Simulation first, then in real-world
+
+<br>
+
+- **Deep Reinforcement Learning for Autonomous Driving A Survey**
+ **[`arXiv 2020`]** *B Ravi Kiran, Ibrahim Sobh, Victor Talpaert, Patrick Mannion, Ahmad A. Al Sallab, Senthil Yogamani, Patrick Pérez* [(arXiv)](http://arxiv.org/abs/2002.00444) [(pdf)](./RL-based/Deep%20Reinforcement%20Learning%20for%20Autonomous%20Driving%20A%20Survey.pdf) (Citation: 1200)
+  - A survey for DRL in autonomous driving (not)
+
+  <p align="center">
+  <img src="./imgs/survey_in_LLM_AD.png" width="100%">
+  </p>
+
+
+
+### LLM based
+
+
 - **Large Language Models for Autonomous Driving Real-World Experiments**
  **[`arXiv 2023`]** *Can Cui, Zichong Yang, Yupeng Zhou, Yunsheng Ma, Juanwu Lu, Lingxi Li, Yaobin Chen, Jitesh Panchal, Ziran Wang* [(arXiv)](http://arxiv.org/abs/2312.09397) [(pdf)](./LLM-based%20AD/Large%20Language%20Models%20for%20Autonomous%20Driving%20with%20Real-World%20Experiments.pdf) (Citation: 0)
 
@@ -105,6 +142,48 @@
     - Q-Former: align the non-text features into textual domain
     - LLM: generate final text output.
     - Instructed Vision Decoder: A transformer decoder for features alignments
+
+<br />
+
+- **Drive Like a Human Rethinking Autonomous Driving with Large Language
+  Models**
+ **[`arXiv 2023`]** *Daocheng Fu, Xin Li, Licheng Wen, Min Dou, Pinlong Cai, Botian Shi, Yu Qiao* [(arXiv)](http://arxiv.org/abs/2307.07162) [(pdf)](./LLM-based%20AD/Drive%20Like%20a%20Human%20Rethinking%20Autonomous%20Driving%20with%20Large%20Language.pdf) (Citation: 33)
+  - Contains an example of using **Highway Env** to train LLM in AD
+
+<br />
+
+- **Receive Reason and React Drive as You Say with Large Language Models
+  in Autonomous Vehicles**
+ **[`arXiv 2023`]** *Can Cui, Yunsheng Ma, Xu Cao, Wenqian Ye, Ziran Wang* [(arXiv)](http://arxiv.org/abs/2310.08034) [(pdf)](./LLM-based%20AD/Receive%20Reason%20and%20React%20Drive%20as%20You%20Say%20with%20Large%20Language%20Models.pdf) (Citation: 9)
+  - **Summary:** Use GPT-4 in **Highway Env** simulator to control a vehicle in taking over lanes.
+  
+  <p align="center">
+  <img src="./imgs/rrr.png" width="100%">
+  </p>
+
+  - **COT**: humans provide an example of how to break down the prompt into small pieces. 
+  - **In context learning**: provide the LLMs with specific examples and operational thoughts for AD, LLMs successfully navigated the challenges, underlining the importance of context. 
+
+<br>
+
+- **GAIA-1 A Generative World Model for Autonomous Driving**
+ **[`arXiv 2023`]** *Anthony Hu, Lloyd Russell, Hudson Yeo, Zak Murez, George Fedoseev, Alex Kendall, Jamie Shotton, Gianluca Corrado* [(arXiv)](http://arxiv.org/abs/2309.17080) [(pdf)](./LLM-based%20AD/GAIA-1%20A%20Generative%20World%20Model%20for%20Autonomous%20Driving.pdf) (Citation: 21)
+  - **Objective:** GAIA-1 aims to address the challenge of predicting various potential outcomes in response to a vehicle’s actions as the real-world environment evolves. This capability is crucial for safe and effective autonomous navigation.
+  - **Inputs:** GAIA-1 takes video data, textual information, and action commands as inputs. By combining these modalities, it constructs a comprehensive understanding of the driving environment.
+  - **Output:** Output is a predictive video based on input video and action
+  <p align="center">
+  <img src="./imgs/gaia-1.png" width="100%">
+  </p>
+
+
+  - **Sequence Modeling:** GAIA-1 approaches world modeling as an unsupervised sequence modeling problem. It maps the inputs to discrete tokens and predicts the next token in the sequence. This approach allows it to learn high-level structures, scene dynamics, contextual awareness, and geometry.
+
+
+
+  - **Learned Representations:** GAIA-1’s learned representation captures expectations of future events. This powerful representation, combined with its ability to generate realistic samples, opens up new possibilities for innovation in autonomous driving technology.
+  - **Fine-Grained Control:** The model provides fine-grained control over ego-vehicle behavior and scene features. This control enables researchers and engineers to explore different scenarios and train autonomous systems more effectively.
+
+
 
 
 
