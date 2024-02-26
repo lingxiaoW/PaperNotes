@@ -63,8 +63,9 @@
   - **Objective**: Can large pretrained vision-language models be integrated directly into low-level robotic control to boost generalization and enable emergent semantic reasoning? -> Vision-Language-Action (VLA) model. 
   - **Approach**: Directly train vision-langauge models designed for open-vocabulary visual question answering and visual dialogue to output low-level robot actions.
     - Robot actions are tokenized into text tokens and create multimodal sentences. 
+    - i.e., **Fine-tune a VLM using robot trajectory data.**
   - **VLA is built upon VLMs**: PaLI-X and PaLM-E
-    - VLMs must be trained to otuput actions. Representing actions as tokens in the model's output, treated in the same way as language tokens.
+    - VLMs must be trained to output actions. **Representing actions as tokens in the model's output, treated in the same way as language tokens.**
     - Action Space: 6-DoF positional and rotational displacement of the robot end-effector; continuous dimensions are discretized into 256 bins uniformly. 
     - Convert action vector into a **single string**: 
     
@@ -72,10 +73,12 @@
     <img src="./../images/rt2-action_string.png" width="80%">
     </p>
 
-    - **Input**: robot camera image and textual task description (using standard VQA format Q: what action should the robot take to [task instruction]? A:) 
-    - **Output**: A string of numbers/least frequently used tokens representing a robot action. 
+    - **Input**: robot camera image and textual task description, using standard VQA format 
+          ``Q: what action should the robot take to [task instruction]? A:`` 
+    - **Output**: A string of numbers/least frequently used tokens representing a robot action.
+          ``1 128 91 241 5 101 127``
   - **Real-Time Inference**
-    - The size of VLA is 55B parameters. It is running on a multi-TPU cloud service and querying this service over the network. 
+    - The size of VLA is 55B parameters. It is running on a multi-TPU **cloud service** and querying this service over the network. 
     - The frequency of VLA is 1-3 Hz.
   - **Training Data**:
     - Web-scale Visual Question Answering
@@ -85,6 +88,40 @@
     - Augment the data to include an additional "Plan" step, which describes the purpose of the action that the robot is about to take in natural language first, which is then followed by the actual action tokens. 
       - For example: Instruction - I am hungry; Plan - Pick chocolate; Action: .....
       - This data augmentation scheme acts as a bridge between VQA datasets (visual reasoning) and manipulation datasets (generating actions). 
+<br />
+
+
+- **Open X-Embodiment Robotic Learning Datasets and RT-X Models**
+ **[`arXiv 2023`]** *Open X-Embodiment Collaboration* [(arXiv)](http://arxiv.org/abs/2310.08864) [(pdf)](./Open%20X-Embodiment%20Robotic%20Learning%20Datasets%20and%20RT-X%20Models.pdf) (Citation: 39)
+  - **Objective:** 
+    - Can we train generalist X-robot policy that can adapted efficiently to new robots, tasks, and environments? 
+    - Provide datasets in standaraized data formats and models to make it possible to explore this possibility in robotic manipulation.
+    - Assemble the dataset from 22 different robots through 22 institutions, demonstrating 527 skills. 
+    - Train a high-capacity model trained on this data, showing positive transfer and improves the capabilities of multiple robots.  
+  - **Challenges in robotic generalist:**
+    - Computer vision and NLP can leverage large datasets sourced from the web, the large and broad datasets for robotic interaction are hard to acquire.
+  - **X-embodiment Training:**
+    - **A collection of training data** from multiple robotic embodiments. 
+    - The open x-embodiment dataset:
+      - Contains 1M+ real robot trajectories spanning 22 robot embodiments
+      - Uses the RLDS (Reinforcement learning dataset) data format 
+    - **RT-X Design**:
+      - Input: the model receives a history of recent images and language instructions as observations
+      - Output: predicts a 7-dim action vector controlling the end-effector. 
+      
+      <p align="center">
+      <img src="./../images/openx_embodiment.png" width="100%">
+      </p>
+  
+      - **RT-1**: 
+        - Inputs: 15 history images + instruction as input
+        - Images are processed via an ImageNet-pretrained EfficientNet
+        - Instruction is transformed into a USE (universal sentence encoder) embedding. The visual and language representations are then interwoven via FiLM layers to produce 81 vision-language tokens.
+        - Output: Tokenized actions generated via a decoder-only Transformer
+      - **RT-2**:
+        - Casts the tokenized actions to text tokens, e.g., a possible action may be "1 128 91 241". As such any pretrained vision-language model (VLM) can be finetuned for robotic control, leveraging the backbone of VLMs and transferring some of their generalization properties. 
+
+
 <br />
 
 - **VIMA General Robot Manipulation with Multimodal Prompts**
