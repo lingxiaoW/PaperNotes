@@ -6,7 +6,16 @@
     - Edge cases: extreme weather, bad lighting conditions, or rare situations
     - DNN often be considered as a black box
 
+  <p align="center">
+  <img src="./imgs/survey_in_LLM_AD.png" width="100%">
+  </p>
 
+  - Datasets
+
+  <p align="center">
+  <img src="./imgs/datasets.png" width="50%">
+  </p>
+---
 
 ### RL based
 
@@ -26,13 +35,11 @@
 
 - **Deep Reinforcement Learning for Autonomous Driving A Survey**
  **[`arXiv 2020`]** *B Ravi Kiran, Ibrahim Sobh, Victor Talpaert, Patrick Mannion, Ahmad A. Al Sallab, Senthil Yogamani, Patrick Pérez* [(arXiv)](http://arxiv.org/abs/2002.00444) [(pdf)](./RL-based/Deep%20Reinforcement%20Learning%20for%20Autonomous%20Driving%20A%20Survey.pdf) (Citation: 1200)
-  - A survey for DRL in autonomous driving (not)
-
-  <p align="center">
-  <img src="./imgs/survey_in_LLM_AD.png" width="100%">
-  </p>
+  - A survey for DRL in autonomous driving (not very useful, reviewed a lot RL algorithms)
 
 
+
+---
 
 ### LLM based
 
@@ -178,11 +185,34 @@
 
   - **Sequence Modeling:** GAIA-1 approaches world modeling as an unsupervised sequence modeling problem. It maps the inputs to discrete tokens and predicts the next token in the sequence. This approach allows it to learn high-level structures, scene dynamics, contextual awareness, and geometry.
 
-
-
   - **Learned Representations:** GAIA-1’s learned representation captures expectations of future events. This powerful representation, combined with its ability to generate realistic samples, opens up new possibilities for innovation in autonomous driving technology.
   - **Fine-Grained Control:** The model provides fine-grained control over ego-vehicle behavior and scene features. This control enables researchers and engineers to explore different scenarios and train autonomous systems more effectively.
 
+
+- **DriveGPT4 Interpretable End-to-end Autonomous Driving via Large
+  Language Model**
+ **[`arXiv 2023`]** *Zhenhua Xu, Yujia Zhang, Enze Xie, Zhen Zhao, Yong Guo, Kwan-Yee. K. Wong, Zhenguo Li, Hengshuang Zhao* [(arXiv)](http://arxiv.org/abs/2310.01412) [(pdf)](./LLM-based%20AD/DriveGPT4%20Interpretable%20End-to-end%20Autonomous%20Driving%20via%20Large.pdf) (Citation: 28)
+  - LLM-based Autonomous driving
+  - Dataset: BBD-X, LLM: LLaMA 2
+  - **Architecture**:
+
+    <p align="center">
+    <img src="./imgs/driveGPT4.png" width="100%">
+    </p>
+
+    - The vision encoder is a CLIP to process input video frames
+    - The output actions are processed similarly to texts, i.e., tokenized (similar to RT-2). The tokenizer in LLaMA is used to decode tokens back into texts.
+    - A sample input/output is presented as follows
+
+    <p align="center">
+    <img src="./imgs/drivegpt4_sample.png" width="100%">
+    </p>
+
+  - Training:
+    - **Stage 1**: pretaining on LLaVA and Valley (595K videos + 703K images). The datasets encompass various topics that are not specifically designed for AD. CLIP encoder and LLM weights are fixed, only the projector is trained.
+    - **Stage 2**: training on BBD-X and ChatGPT generated Video-text insturction-follwing data (56K). Projector and LLM are updated in this stage.
+
+---
 
 
 

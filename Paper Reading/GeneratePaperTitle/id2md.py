@@ -51,10 +51,11 @@ class Information():
         first_author = f'{self.first_author}'
         authors = f'*{authors}*'
         pdf = '[(pdf)]()'
+        notes = '[(Notes)]()'
         citation = '(Citation: )'
 
         print('-', title)
-        print('', publish, authors, title_url,pdf, citation)
+        print('', publish, authors, title_url, pdf, notes, citation)
 
 
 if __name__ == "__main__":

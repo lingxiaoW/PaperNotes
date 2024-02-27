@@ -1,0 +1,14 @@
+- **A Survey on In-context Learning**
+ **[`arXiv 2022`]** *Qingxiu Dong, Lei Li, Damai Dai, Ce Zheng, Zhiyong Wu, Baobao Chang, Xu Sun, Jingjing Xu, Lei Li, Zhifang Sui* [(arXiv)](http://arxiv.org/abs/2301.00234) [(pdf)](./../A%20Survey%20on%20In-context%20Learning.pdf) (Citation: 445)
+  - **Definition of ICL:**
+    - ICL involves training large language models (LLMs) to make predictions based solely on contexts augmented with a few examples. Essentially, it’s about learning from a limited set of contextually relevant instances12.
+    - This approach has gained prominence due to the increasing capabilities of LLMs.
+  - **Advanced Techniques in ICL**:
+    - **Training Strategies:** Researchers explore various methods to enhance ICL. These strategies impact how LLMs learn from context and examples.
+    - **Demonstration Designing Strategies:** Crafting effective demonstrations (examples) within the context is crucial. Researchers investigate optimal ways to present these examples.
+    - **Related Analysis:** Understanding the interplay between context, examples, and model predictions is essential. Researchers analyze the effectiveness of ICL approaches.
+  - **Challenges and Future Directions:**
+    - Despite progress, challenges remain. Researchers grapple with questions like:
+      - How does ICL work?
+      - How can we improve ICL?
+    - Future research should focus on unraveling the mechanisms behind ICL and enhancing its efficacy.
