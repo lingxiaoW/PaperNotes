@@ -21,9 +21,9 @@
       - Only 8 final tokens are passed on to the Transformer layers.
     ![Dataflow](./../../images/rt1_detailedAchitecture.png)
 
-    - Transformer:
+    - **Transformer**:
       - 8 tokens per-image are than concatenated with other images in the history, forming 48 total tokens
       - Decoder-only sequence model with 8 self-attention alyers. 
-    - Action tokenization:
+    - **Action tokenization**:
       - Each action dimenison is discretized into 256 bins (uniformly distributed).
-    - Loss: cross-entropy (since it is a classification problem).
+    - **Loss:** cross-entropy (since it is a classification problem).

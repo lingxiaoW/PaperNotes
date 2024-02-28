@@ -1,6 +1,6 @@
 - **RT-2 Vision-Language-Action Models Transfer Web Knowledge to Robotic
   Control**
- **[`arXiv 2023`]** *Anthony Brohan, et al.* [(arXiv)](http://arxiv.org/abs/2307.15818) [(pdf)](./rt2%20-%20vision-language-action%20models%20transfer%20web%20knowledge%20to%20robotic%20control.pdf)(Citation: 6)
+ **[`arXiv 2023`]** *Anthony Brohan, et al.* [(arXiv)](http://arxiv.org/abs/2307.15818) [(pdf)](./../rt2%20-%20vision-language-action%20models%20transfer%20web%20knowledge%20to%20robotic%20control.pdf)(Citation: 6)
 
   <p align="center">
     <img src="./../../images/rt-2.png" width="100%">
@@ -23,6 +23,8 @@
           ``Q: what action should the robot take to [task instruction]? A:`` 
     - **Output**: A string of numbers/least frequently used tokens representing a robot action.
           ``1 128 91 241 5 101 127``
+  - **Robot-Action Fine-tuning**
+    - Treat robot actions as tokens in the model's output, identical to text tokens. 
   - **Real-Time Inference**
     - The size of VLA is 55B parameters. It is running on a multi-TPU **cloud service** and querying this service over the network. 
     - The frequency of VLA is 1-3 Hz.
@@ -34,3 +36,8 @@
     - Augment the data to include an additional "Plan" step, which describes the purpose of the action that the robot is about to take in natural language first, which is then followed by the actual action tokens. 
       - For example: Instruction - I am hungry; Plan - Pick chocolate; Action: .....
       - This data augmentation scheme acts as a bridge between VQA datasets (visual reasoning) and manipulation datasets (generating actions).
+  - **Limitations:**
+    - Generalization capability is limited. 
+      - The robot can only excel in seen tasks. 
+      ![Dataflow](./../../images/rt2_generalization.png)
+    - Inference rate is slow and needs high computational resources.

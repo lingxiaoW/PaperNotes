@@ -6,3 +6,6 @@
   <p align="center">
   <img src="./../../images/grounding.png" width="100%">
   </p>
+
+  - Grounding (from PaLM-E):
+    - While training LLMs on massive textual data may lead to representations that relate to our physical world, connecting those representations to real-world visual and physical sensor modalities is essential to solving a wider range of grounded real-world problems in computer vision and robotics. 

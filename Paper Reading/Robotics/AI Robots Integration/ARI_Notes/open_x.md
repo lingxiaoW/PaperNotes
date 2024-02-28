@@ -1,5 +1,5 @@
 - **Open X-Embodiment Robotic Learning Datasets and RT-X Models**
- **[`arXiv 2023`]** *Open X-Embodiment Collaboration* [(arXiv)](http://arxiv.org/abs/2310.08864) [(pdf)](./Open%20X-Embodiment%20Robotic%20Learning%20Datasets%20and%20RT-X%20Models.pdf) (Citation: 39)
+ **[`arXiv 2023`]** *Open X-Embodiment Collaboration* [(arXiv)](http://arxiv.org/abs/2310.08864) [(pdf)](./../Open%20X-Embodiment%20Robotic%20Learning%20Datasets%20and%20RT-X%20Models.pdf) (Citation: 39)
   - **Objective:** 
     - Can we train generalist X-robot policy that can adapted efficiently to new robots, tasks, and environments? 
     - Provide datasets in standaraized data formats and models to make it possible to explore this possibility in robotic manipulation.
@@ -17,7 +17,7 @@
       - Output: predicts a 7-dim action vector controlling the end-effector. 
       
       <p align="center">
-      <img src="./../images/openx_embodiment.png" width="100%">
+      <img src="./../../images/openx_embodiment.png" width="100%">
       </p>
   
       - **RT-1**: 

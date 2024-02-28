@@ -11,6 +11,7 @@
 ## Terminologies
 
 - **[Grounding](./ARI_Notes/grounding.md)**
+- **[Open-Vocabulary & Closed-Vocabulary](./ARI_Notes/open_vocabulary.md)**
 
 ---
 
@@ -23,16 +24,19 @@
 ---
 
 ## Simulation Environments
-* Remote Object Grounding:
+* **Remote Object Grounding**:
   * [REVERIE](https://github.com/YuankaiQi/REVERIE)
-* Housekeeper environment:
+* **Housekeeper environment**:
   * [ALFRED](https://askforalfred.com/)
   * [Minedojo](https://github.com/MineDojo/MineDojo)
-* Environment Understanding:
+  * [SOON](https://scenario-oriented-object-navigation.github.io/)
+* **Environment Understanding:**
   * [OpenScene](https://github.com/pengsongyou/openscene)
   * [ScanRefer](https://daveredrum.github.io/ScanRefer/)
-* Object Manipulation:
+* **Object Manipulation:**
   * [RAVENS](https://github.com/google-research/ravens?tab=readme-ov-file)
+* **Humanoid Robot:**
+  * [Issac Gym](https://developer.nvidia.com/isaac-gym)
 
 ---
 
@@ -105,14 +109,14 @@
 <br />
 
 - **VIMA General Robot Manipulation with Multimodal Prompts**
- **[`ICML 2023`]** *Yunfan Jiang, Agrim Gupta, Zichen Zhang, Guanzhi Wang, Yongqiang Dou, Yanjun Chen, Li Fei-Fei, Anima Anandkumar, Yuke Zhu, Linxi Fan* [(arXiv)](http://arxiv.org/abs/2210.03094) [(pdf)](./VIMA%20-%20General%20Robot%20Manipulation%20with%20Multimodal%20Prompts.pdf) (Citation: 53)
+ **[`ICML 2023`]** *Yunfan Jiang, Agrim Gupta, Zichen Zhang, Guanzhi Wang, Yongqiang Dou, Yanjun Chen, Li Fei-Fei, Anima Anandkumar, Yuke Zhu, Linxi Fan* [(arXiv)](http://arxiv.org/abs/2210.03094) [(Notes)](./ARI_Notes/vima.md) [(pdf)](./VIMA%20-%20General%20Robot%20Manipulation%20with%20Multimodal%20Prompts.pdf) (Citation: 53)
 
 
 
 <br />
 
 - **PaLM-E An Embodied Multimodal Language Model**
- **[`arXiv 2023`]** *Danny Driess, Fei Xia, et al.* [(arXiv)](http://arxiv.org/abs/2303.03378) [(pdf)](./palm-e.pdf)[(Notes)](./ARI_Notes/palm_e.md) (Citation: 194)
+ **[`arXiv 2023`]** *Danny Driess, Fei Xia, et al.* [(arXiv)](http://arxiv.org/abs/2303.03378) [(pdf)](./palm-e.pdf)[(Notes)](./ARI_Notes/palm-e.md) (Citation: 194)
   - A LLM-based agent that generates robot actions as textual instructions to perform. 
 
 
@@ -124,25 +128,11 @@
 
 <br />
 
-- **RREx-BoT Remote Referring Expressions with a Bag of Tricks**
- **[`arXiv 2023`]** *Gunnar A. Sigurdsson, Jesse Thomason, Gaurav S. Sukhatme, Robinson Piramuthu* [(arXiv)](http://arxiv.org/abs/2301.12614) [(pdf)](./RREx-BoT%20Remote%20Referring%20Expressions%20with%20a%20Bag%20of%20Tricks.pdf)[(Notes)](./ARI_Notes/rrex-bot.md) (Citation: 0)
-  - Using a generic vision-language scoring model with minor modifications for 3D encoding and operating in an embodied environment. 
 
-
-<br />
-
-- **LLM-Grounder Open-Vocabulary 3D Visual Grounding with Large Language
-  Model as an Agent**
- **[`arXiv 2023`]** *Jianing Yang, Xuweiyi Chen, Shengyi Qian, Nikhil Madaan, Madhavan Iyengar, David F. Fouhey, Joyce Chai* [(arXiv)](http://arxiv.org/abs/2309.12311) [(pdf)](./LLM-Grounder%20-%20Open-Vocabulary%203D%20Visual%20Grounding%20with%20Large%20Language%20Model%20as%20an%20Agent.pdf)[(Notes)](./ARI_Notes/llm_grounder.md) (Citation: 8)
-  -  Focus on 3D visual object grounding. Let the robot to understand 3D objects. 
-  -  Use LLM to decompose complex natural language queries into semantic constitutents and employs a visual grounding tool to identify objects in a 3D scene. 
-    
-
-<br />
 
 - **Towards End-to-End Embodied Decision Making via Multi-modal Large
   Language Model Explorations with GPT4-Vision and Beyond**
- **[`arXiv 2023`]** *Liang Chen, Yichi Zhang, Shuhuai Ren, Haozhe Zhao, Zefan Cai, Yuchi Wang, Peiyi Wang, Tianyu Liu, Baobao Chang* [(arXiv)](http://arxiv.org/abs/2310.02071) [(pdf)](./Towards%20End-to-End%20Embodied%20Decision%20Making%20via%20Multi-modal%20Large%20Language%20Model%20-%20Explorations%20with%20GPT4-Vision%20and%20Beyond.pdf) (Citation: 0)
+ **[`arXiv 2023`]** *Liang Chen, Yichi Zhang, Shuhuai Ren, Haozhe Zhao, Zefan Cai, Yuchi Wang, Peiyi Wang, Tianyu Liu, Baobao Chang* [(arXiv)](http://arxiv.org/abs/2310.02071) [(pdf)](./Towards%20End-to-End%20Embodied%20Decision%20Making%20via%20Multi-modal%20Large%20Language%20Model%20-%20Explorations%20with%20GPT4-Vision%20and%20Beyond.pdf) [(Notes)](./ARI_Notes/PCA-EVAL.md) (Citation: 0)
 
 
  <br>
@@ -164,6 +154,26 @@
 
 
 
+
+---
+
+## Object Grounding
+
+- **RREx-BoT Remote Referring Expressions with a Bag of Tricks**
+ **[`arXiv 2023`]** *Gunnar A. Sigurdsson, Jesse Thomason, Gaurav S. Sukhatme, Robinson Piramuthu* [(arXiv)](http://arxiv.org/abs/2301.12614) [(pdf)](./RREx-BoT%20Remote%20Referring%20Expressions%20with%20a%20Bag%20of%20Tricks.pdf)[(Notes)](./ARI_Notes/rrex-bot.md) (Citation: 0)
+  - Using a generic vision-language scoring model with minor modifications for 3D encoding and operating in an embodied environment. 
+
+
+<br />
+
+- **LLM-Grounder Open-Vocabulary 3D Visual Grounding with Large Language
+  Model as an Agent**
+ **[`arXiv 2023`]** *Jianing Yang, Xuweiyi Chen, Shengyi Qian, Nikhil Madaan, Madhavan Iyengar, David F. Fouhey, Joyce Chai* [(arXiv)](http://arxiv.org/abs/2309.12311) [(pdf)](./LLM-Grounder%20-%20Open-Vocabulary%203D%20Visual%20Grounding%20with%20Large%20Language%20Model%20as%20an%20Agent.pdf)[(Notes)](./ARI_Notes/llm_grounder.md) (Citation: 8)
+  -  Focus on 3D visual object grounding. Let the robot to understand 3D objects. 
+  -  Use LLM to decompose complex natural language queries into semantic constitutents and employs a visual grounding tool to identify objects in a 3D scene. 
+    
+
+<br />
 
 ---
 
