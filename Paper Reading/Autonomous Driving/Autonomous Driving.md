@@ -1,20 +1,13 @@
 # Autonomous Driving 
 
 ### Review Articles
-- **A Survey on Multimodal Large Language Models for Autonomous Driving** [(pdf)](./LLM-based%20AD/A%20Survey%20on%20Multimodal%20Large%20Language%20Models%20for%20Autonomous%20Driving.pdf)
-  - Problems of DL for autonomous driving:
-    - Edge cases: extreme weather, bad lighting conditions, or rare situations
-    - DNN often be considered as a black box
+- **A Survey on Multimodal Large Language Models for Autonomous Driving** [(pdf)](./LLM-based%20AD/A%20Survey%20on%20Multimodal%20Large%20Language%20Models%20for%20Autonomous%20Driving.pdf) [(Notes)](./AD_notes/llm_survey.md)
 
-  <p align="center">
-  <img src="./imgs/survey_in_LLM_AD.png" width="100%">
-  </p>
 
-  - Datasets
+- **End-to-end Autonomous Driving Challenges and Frontiers**
+ **[`arXiv 2023`]** *Li Chen, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li* [(arXiv)](http://arxiv.org/abs/2306.16927) [(pdf)](./Survey/End-to-end%20Autonomous%20Driving%20-%20Challenges%20and%20Frontiers.pdf) [(Notes)](./AD_notes/end2end_AD_survey.md) (Citation: 46)
 
-  <p align="center">
-  <img src="./imgs/datasets.png" width="50%">
-  </p>
+
 ---
 
 ### RL based
