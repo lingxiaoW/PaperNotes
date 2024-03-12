@@ -27,3 +27,25 @@
         - Without human-defined information bottleneck.
         - Generalize for various scenarios. 
         - Drawback: hard to interpretate. 
+
+    ![alt text](../imgs/end-to-end%20planning.png)
+
+    - **End-to-End DL Methods**:
+      - **Imitation Learning**:
+        - *Behavioral Cloning*: the agent leverages expert trajectories to the training model and replicates the policy using a DNN. 
+        - *Direct Policy Learning*: Evaluates the current policy and then obtains more suitable training data for self-optimization. 
+          - Compared to BC, the main advantage of DPL leverages expert trajectories to instruct the agent how to receover from current errors.  
+          ![alt text](../imgs/dpl.png)
+        
+        - *Inverse Reinforcement learning*: designed to circumvent the drawbacks of the DPL by inferring the latent reasons between input and output. 
+          - IRL needs to collect a set of expert trajectories at the beginning. 
+          - Instead of learning a state-action mapping, these expert trajectories are first inferred and then the behavioral policy is optimized based on the elaborate reward function. 
+          - IRL contains **three** methods:
+            - **Max-margin**: Leverages expert trajectories to eavluate a reward function that maximizes the margin between the optimal policy and estimates sub-optimal policies. (the quality and distribution of expert trajectories sets an upper bound on the performance of this method).
+            - **Bayesian Method**: use the optimized trajectory or the prior distribution of the reward to maximize the posterior distribution of the reward. 
+            - **Maximum Entropy Method**: use maximum entropy in the optimization routine to estimate the reward function. 
+        - **Reinforcement Learning**. 
+          - Value-based: DQN
+          - Policy-Based: DDPG
+          - Hierarchical RL: decomposes the total problem into a hierarchy of subtasks. The subtasks are organized in a hierarchical manner, with high-level subtasks providing context and guidance for lower-level ones. 
+            - For instance, **two-stage HRL**: one is to decide whether to execute a lane change action, the low-level network learns policies for executing the chosen commands. 
