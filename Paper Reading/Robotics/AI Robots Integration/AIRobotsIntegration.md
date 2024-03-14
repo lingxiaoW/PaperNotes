@@ -40,6 +40,11 @@
 
 ---
 
+## Useful Sentences
+* It has been well-established that language acts as a valuable interface fro non-experts to communicate with robots [cite: toward understanding natural language directions 2010]. 
+
+---
+
 ## Object Manipulation
 - **GAPartNet Cross-Category Domain-Generalizable Object Perception and
   Manipulation via Generalizable and Actionable Parts**

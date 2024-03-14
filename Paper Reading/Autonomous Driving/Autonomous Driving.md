@@ -3,13 +3,17 @@
 ### Review Articles
 - **A Survey on Multimodal Large Language Models for Autonomous Driving** [(pdf)](./LLM-based%20AD/A%20Survey%20on%20Multimodal%20Large%20Language%20Models%20for%20Autonomous%20Driving.pdf) [(Notes)](./AD_notes/llm_survey.md)
 
+<br />
 
 - **End-to-end Autonomous Driving Challenges and Frontiers**
  **[`arXiv 2023`]** *Li Chen, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li* [(arXiv)](http://arxiv.org/abs/2306.16927) [(pdf)](./Survey/End-to-end%20Autonomous%20Driving%20-%20Challenges%20and%20Frontiers.pdf) [(Notes)](./AD_notes/end2end_AD_survey.md) (Citation: 46)
 
+<br />
 
 - **Decision-Making Technology for Autonomous Vehicles Learning-Based Methods Applications and Future Outlook**
  **[`arXiv 2021`]** *Qi Liu, Xueyuan Li, Shihua Yuan, Zirui Li* [(arXiv)](http://arxiv.org/abs/2107.01110) [(pdf)]() (Citation: )
+
+<br />
 
 - **Motion Planning for Autonomous Driving: The State of Art and Future Perspectives**
 **[IEEE Transactions on Intelligent Vehicles]** *Siyu Teng, Xuemin Hu, ...* [(IEEE)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10122127) [(pdf)](./Survey/Motion_Planning_for_Autonomous_Driving_The_State_of_the_Art_and_Future_Perspectives.pdf) [(Notes)](./AD_notes/motion_planning_survey.md) (Citation: 145)
@@ -37,7 +41,12 @@
  **[`arXiv 2020`]** *B Ravi Kiran, Ibrahim Sobh, Victor Talpaert, Patrick Mannion, Ahmad A. Al Sallab, Senthil Yogamani, Patrick Pérez* [(arXiv)](http://arxiv.org/abs/2002.00444) [(pdf)](./RL-based/Deep%20Reinforcement%20Learning%20for%20Autonomous%20Driving%20A%20Survey.pdf) (Citation: 1200)
   - A survey for DRL in autonomous driving (not very useful, reviewed a lot RL algorithms)
 
+<br>
 
+- **DQ-GAT Towards Safe and Efficient Autonomous Driving with Deep
+  Q-Learning and Graph Attention Networks**
+ **[`arXiv 2021`]** *Peide Cai, Hengli Wang, Yuxiang Sun, Ming Liu* [(arXiv)](http://arxiv.org/abs/2108.05030) [(pdf)](./RL-based/DQ-GAT_Towards_Safe_and_Efficient_Autonomous_Driving_With_Deep_Q-Learning_and_Graph_Attention_Networks.pdf) (Citation: 21)
+  - Simultion-based and RL-based interaction control algorithm
 
 ---
 
@@ -82,7 +91,7 @@
 
 - **Receive Reason and React Drive as You Say with Large Language Models
   in Autonomous Vehicles**
- **[`arXiv 2023`]** *Can Cui, Yunsheng Ma, Xu Cao, Wenqian Ye, Ziran Wang* [(arXiv)](http://arxiv.org/abs/2310.08034) [(Note)](./AD_notes/reason2drive.md) [(pdf)](./../LLM-based%20AD/Receive%20Reason%20and%20React%20Drive%20as%20You%20Say%20with%20Large%20Language%20Models.pdf) (Citation: 9)
+ **[`arXiv 2023`]** *Can Cui, Yunsheng Ma, Xu Cao, Wenqian Ye, Ziran Wang* [(arXiv)](http://arxiv.org/abs/2310.08034) [(Note)](./AD_notes/reason&react.md) [(pdf)](./LLM-based%20AD/Receive%20Reason%20and%20React%20Drive%20as%20You%20Say%20with%20Large%20Language%20Models.pdf) (Citation: 9)
   - **Summary:** Use GPT-4 in **Highway Env** simulator to control a vehicle in taking over lanes.
   
   <p align="center">
@@ -93,7 +102,8 @@
 
 - **GAIA-1 A Generative World Model for Autonomous Driving**
  **[`arXiv 2023`]** *Anthony Hu, Lloyd Russell, Hudson Yeo, Zak Murez, George Fedoseev, Alex Kendall, Jamie Shotton, Gianluca Corrado* [(arXiv)](http://arxiv.org/abs/2309.17080) [(Note)](./AD_notes/GAIA-1.md) [(pdf)](./LLM-based%20AD/GAIA-1%20A%20Generative%20World%20Model%20for%20Autonomous%20Driving.pdf) (Citation: 21)
-  - **Objective:** GAIA-1 aims to address the challenge of predicting various potential outcomes in response to a vehicle’s actions as the real-world environment evolves. This capability is crucial for safe and effective autonomous navigation.
+  - **Objective:** GAIA-1 aims to address the challenge of predicting various potential outcomes in response to a vehicle’s actions as the real-world environment evolves. 
+  - Anticipate various potential outcomes based on the vehicle's maneuvers. 
   <p align="center">
   <img src="./imgs/gaia-1.png" width="100%">
   </p>
@@ -110,6 +120,31 @@
     <p align="center">
     <img src="./imgs/driveGPT4.png" width="100%">
     </p>
+
+
+<br >
+
+- **GPT-Driver Learning to Drive with GPT**
+ **[`NeurIPS 2023`]** *Jiageng Mao, Yuxi Qian, Junjie Ye, Hang Zhao, Yue Wang* [(arXiv)](http://arxiv.org/abs/2310.01415) [(pdf)](./LLM-based%20AD/GPT-Driver%20Learning%20to%20Drive%20with%20GPT.pdf) [(Notes)](./AD_notes/driveGPT4.md) (Citation: 32)
+  - Convert the AD motion planning problem as a language task
+  - Propose a Prompt-Reason-Planning framework for a GPT-3.5 to predict vehicle's future trajectory
+  - Use OpenAI fine-tune API to fine-tune the model
+
+
+
+<br >
+
+- **Planning-oriented Autonomous Driving**
+ **[`CVPR 2023`]** *Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li* [(arXiv)](http://arxiv.org/abs/2212.10156) [(pdf)](./LLM-based%20AD/Planning-oriented%20Autonomous%20Driving.pdf) [(Notes)](./AD_notes/uniAD.md) (Citation: 153)
+  - Proposed a **Perception -> Prediction -> Planning** framework for end-to-end motion planning in AD.
+
+    <p align="center">
+    <img src="./imgs/uniAD_model.png" width="100%">
+    </p>  
+
+<br >
+
+
 
 ---
 

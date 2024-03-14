@@ -9,3 +9,6 @@
 
   - **COT**: humans provide an example of how to break down the prompt into small pieces. 
   - **In context learning**: provide the LLMs with specific examples and operational thoughts for AD, LLMs successfully navigated the challenges, underlining the importance of context. 
+  - **My concerns**: 
+    - Not mentioning the inference speed.
+    - Not mentioning what if other vehicles change its position. 
