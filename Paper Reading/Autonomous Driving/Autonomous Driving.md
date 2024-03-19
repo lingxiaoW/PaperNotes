@@ -1,7 +1,15 @@
 # Autonomous Driving 
 
+
+### Terminologies:
+- **Close Loop**: train AD agent in a simulation, e.g., Reinforcement Learning
+- **Open Loop**: train AD agent in historical data, e.g., Behavior Cloning
+
+
 ### Review Articles
 - **A Survey on Multimodal Large Language Models for Autonomous Driving** [(pdf)](./LLM-based%20AD/A%20Survey%20on%20Multimodal%20Large%20Language%20Models%20for%20Autonomous%20Driving.pdf) [(Notes)](./AD_notes/llm_survey.md)
+
+
 
 <br />
 
@@ -48,6 +56,12 @@
  **[`arXiv 2021`]** *Peide Cai, Hengli Wang, Yuxiang Sun, Ming Liu* [(arXiv)](http://arxiv.org/abs/2108.05030) [(pdf)](./RL-based/DQ-GAT_Towards_Safe_and_Efficient_Autonomous_Driving_With_Deep_Q-Learning_and_Graph_Attention_Networks.pdf) (Citation: 21)
   - Simultion-based and RL-based interaction control algorithm
 
+<br >
+
+- **Generating adversarial driving scenarios in high-fidelity simulators**
+ **[`ICRA 2019`]** *Yasasa Abeysirigoonawardena, Florian Shkurti, and Gregory Dudek* [(IEEE)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8793740) [(pdf)](./RL-based/Generating%20adversarial%20driving%20scenarios%20in%20high-fidelity%20simulators.pdf) [(Notes)](./AD_notes/adversarialDriving.md) (Citation: 120)
+
+
 ---
 
 ### LLM based
@@ -84,7 +98,7 @@
 
 - **Drive Like a Human Rethinking Autonomous Driving with Large Language
   Models**
- **[`arXiv 2023`]** *Daocheng Fu, Xin Li, Licheng Wen, Min Dou, Pinlong Cai, Botian Shi, Yu Qiao* [(arXiv)](http://arxiv.org/abs/2307.07162) [(pdf)](./LLM-based%20AD/Drive%20Like%20a%20Human%20Rethinking%20Autonomous%20Driving%20with%20Large%20Language.pdf) (Citation: 33)
+ **[`arXiv 2023`]** *Daocheng Fu, Xin Li, Licheng Wen, Min Dou, Pinlong Cai, Botian Shi, Yu Qiao* [(arXiv)](http://arxiv.org/abs/2307.07162) [(pdf)](./LLM-based%20AD/Drive%20Like%20a%20Human%20Rethinking%20Autonomous%20Driving%20with%20Large%20Language.pdf) [(Notes)](./AD_notes/driveLikeHuman.md) (Citation: 33)
   - Contains an example of using **Highway Env** to train LLM in AD
 
 <br />
@@ -143,6 +157,23 @@
     </p>  
 
 <br >
+
+
+- **ALT-Pilot Autonomous navigation with Language augmented Topometric maps**
+ **[`arXiv 2023`]** *Mohammad Omama, Pranav Inani, Pranjal Paul, Sarat Chandra Yellapragada, Krishna Murthy Jatavallabhula, Sandeep Chinchali, Madhava Krishna* [(arXiv)](http://arxiv.org/abs/2310.02324) [(pdf)](./LLM-based%20AD/ALT-Pilot%20-%20Autonomous%20navigation%20with%20Language%20augmented%20Topometric%20maps.pdf) [(Notes)](./AD_notes/alt_pilot.md) (Citation: 3)
+
+  - Use CLIP in the Particle Filter to update vehicle's position 
+
+<br >
+
+- **LanguageMPC Large Language Models as Decision Makers for Autonomous
+  Driving**
+ **[`arXiv 2023`]** *Hao Sha, Yao Mu, Yuxuan Jiang, Li Chen, Chenfeng Xu, Ping Luo, Shengbo Eben Li, Masayoshi Tomizuka, Wei Zhan, Mingyu Ding* [(arXiv)](http://arxiv.org/abs/2310.03026) [(pdf)](./LLM-based%20AD/LanguageMPC%20Large%20Language%20Models%20as%20Decision%20Makers%20for%20Autonomous.pdf) [(Notes)](./AD_notes/LanguageMPC.md) (Citation: 35)
+
+
+<br >
+
+
 
 
 

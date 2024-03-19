@@ -4,19 +4,19 @@
     - DNN often be considered as a black box
   - **LLM for AD**:
     - **Perception:**
-      - LLMs can harness external APIs to access real-time text-based information sources, such as HD maps, traffic reports, and weather updates. [30]
+      - LLMs can harness external APIs to access real-time text-based information sources, such as HD maps, traffic reports, and weather updates. [[Reason&React]](./reason&react.md)
         - LLMs can process real-time traffic data to identify congested routes and suggest alternative paths, ultimately optimizing navigation for efficiency and safety. 
     - **Motion Planning**:
-      - Users can use their daily languages to express their intentions and preferences. [GPT-Driver]
-      - Besides, LLMs also process textual data sources such as maps, traffic reports, and real-time information to make high-level decisions for optimized route planning. [124]
+      - Users can use their daily languages to express their intentions and preferences. [[GPT-Driver]](./gpt_driver.md)
+      - Besides, LLMs also process textual data sources such as maps, traffic reports, and real-time information to make high-level decisions for optimized route planning. [[Alt_Pilot]](./alt_pilot.md)
     - **Motion Control:**
-      - LLMS first enables the customization of controller parameters to align with driver perferences, achieving personalization in the driving experience [150]. 
+      - LLMS first enables the customization of controller parameters to align with driver perferences, achieving personalization in the driving experience [[LanguageMPC]](./LanguageMPC.md). 
       - Additionally, LLMs can provide transparency by explaining each step of the motion control process.
   - **Ways to enhance the safety of autonomous systems:**
-    - Trustworthy AI: generating adversarial safety-critical scenarios for training autonomous driving systems such that the system is more capable of handling cases with low probability [1, 36].
-    - Vehicle-to-infrastructure and vehicle-to-vehicle communication: with information from nearby instances, the system will have improved robustness and can receive early warnings [99, 122]. 
+    - Trustworthy AI: generating adversarial safety-critical scenarios for training autonomous driving systems such that the system is more capable of handling cases with low probability [[AdversialDriving]](./adversarialDriving.md) [36]
+    - Vehicle-to-infrastructure and vehicle-to-vehicle communication: with information from nearby instances, the system will have improved robustness and can receive early warnings [122]. 
   - **LLMs in AD**:
-    - Converting Visual Information into text represntation, enabling LLMs to interpret the surrounding world [41, 68]. 
+    - Converting Visual Information into text represntation, enabling LLMs to interpret the surrounding world [[DriveLikeHuman]](./driveLikeHuman.md) [68]. 
     - Human-centric AD framework that breaks down user commands into a series of intermediate reasoning steps, accompaniesd by a detailed list of action descriptions to accomplish the objective [30].
 
   <p align="center">
