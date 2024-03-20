@@ -170,10 +170,16 @@
   Driving**
  **[`arXiv 2023`]** *Hao Sha, Yao Mu, Yuxuan Jiang, Li Chen, Chenfeng Xu, Ping Luo, Shengbo Eben Li, Masayoshi Tomizuka, Wei Zhan, Mingyu Ding* [(arXiv)](http://arxiv.org/abs/2310.03026) [(pdf)](./LLM-based%20AD/LanguageMPC%20Large%20Language%20Models%20as%20Decision%20Makers%20for%20Autonomous.pdf) [(Notes)](./AD_notes/LanguageMPC.md) (Citation: 35)
 
+  - Integrate MDP with LLM, let LLM to determine an action and let the MDP to achieve the proposed action. 
 
 <br >
 
+- **SurrealDriver Designing Generative Driver Agent Simulation Framework in
+  Urban Contexts based on Large Language Model**
+ **[`arXiv 2023`]** *Ye Jin, Xiaoxi Shen, Huiling Peng, Xiaoan Liu, Jingli Qin, Jiayang Li, Jintao Xie, Peizhong Gao, Guyue Zhou, Jiangtao Gong* [(arXiv)](http://arxiv.org/abs/2309.13193) [(pdf)](./LLM-based%20AD/SurrealDriver%20Designing%20Generative%20Driver%20Agent%20Simulation%20Framework%20in.pdf) [(Notes)](./AD_notes/surrealdriver.md) (Citation: 14)
 
+   - Proposed a LLM-based AD agent. Use text to describe perception and action. 
+   - Use human driver experience to generate some examples and few-shot learning to finetune the LLM. 
 
 
 

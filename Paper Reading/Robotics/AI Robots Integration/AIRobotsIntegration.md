@@ -91,6 +91,15 @@
 
 <br>
 
+- **Language Models as Zero-Shot Planners Extracting Actionable Knowledge
+  for Embodied Agents**
+ **[`arXiv 2022`]** *Wenlong Huang, Pieter Abbeel, Deepak Pathak, Igor Mordatch* [(arXiv)](http://arxiv.org/abs/2201.07207) [(pdf)](./Language%20Models%20as%20Zero-Shot%20Planners%20Extracting%20Actionable%20Knowledge.pdf) [(Notes)](./ARI_Notes/zero-shotPlanner.md) (Citation: 540)
+  - Use LLM to break-down a complex task into multiple executable actions. 
+
+<br>
+
+
+
 ### 2023
  - **ChatGPT for Robotics Design Principles and Model Abilities**
  **[`arXiv 2023`]** *Sai Vemprala, Rogerio Bonatti, Arthur Bucker, Ashish Kapoor* [(arXiv)](http://arxiv.org/abs/2306.17582) [(pdf)](./ChatGPT%20for%20Robotics%20-%20Design%20Principles%20an%20Model%20Abilities.pdf) (Citation: 62)
@@ -144,7 +153,7 @@
 
  - **VoxPoser Composable 3D Value Maps for Robotic Manipulation with
   Language Models**
- **[`arXiv 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) (Citation: 98)
+ **[`arXiv 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) [(Notes)](./ARI_Notes/voxposer.md) (Citation: 98)
 
 
   
