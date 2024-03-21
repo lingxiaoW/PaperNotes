@@ -228,7 +228,7 @@
 ## Vision-based Navigation
 
 - **BADGR An Autonomous Self-Supervised Learning-Based Navigation System**
- **[`arXiv 2020`]** *Gregory Kahn, Pieter Abbeel, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2002.05700) [(pdf)](./BADGR%20-%20An%20Autonomous%20Self-Supervised%20Learning-Based%20Navigation%20System.pdf) (Citation: 230)
+ **[`arXiv 2020`]** *Gregory Kahn, Pieter Abbeel, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2002.05700) [(pdf)](./BADGR%20-%20An%20Autonomous%20Self-Supervised%20Learning-Based%20Navigation%20System.pdf) [(Notes)](./ARI_Notes/badgr.md) (Citation: 230)
 
 
 <br />
