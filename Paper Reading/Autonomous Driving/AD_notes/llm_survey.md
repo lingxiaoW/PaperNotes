@@ -25,9 +25,9 @@
 
   - Multi-modal LLM for Planning and Control
     - LLMs could enable reasoning of planning and perceiving the environment with textual description to develop user in the loop robotics. 
-    - In AD, LLMs could serve as the bridge to support human-machine interactions [[ZeroShotPlanner]](/Paper%20Reading/Robotics/AI%20Robots%20Integration/ARI_Notes/zero-shotPlanner.md), 61, 185, 31. 
-    - Meanwhile, it is essential to enhance the safety and explainable of autonomous driving. The multimodal language model provides the potential to comprehend its surroundings and the transparency of the decision process [77, 33, 193, 31]. 
-    - Explanable: [22]
+    - In AD, LLMs could serve as the bridge to support human-machine interactions [[ZeroShotPlanner]](/Paper%20Reading/Robotics/AI%20Robots%20Integration/ARI_Notes/zero-shotPlanner.md), [[VoxPoser]](/Paper%20Reading/Robotics/AI%20Robots%20Integration/ARI_Notes/voxposer.md), [[dilu]](./../AD_notes/dilu.md). 
+    - Meanwhile, it is essential to enhance the safety and explainable of autonomous driving. The multimodal language model provides the potential to comprehend its surroundings and the transparency of the decision process [[bdd-x]](./bdd-x.md) [[talk2car]](./talk2car.md) [[DriveGPT4]](./driveGPT4.md). 
+    - Explanable: [[drivingwithLLM]](./drivingwithLLM.md)
 
   - **Vision Datasets for AD**
 

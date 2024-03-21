@@ -148,20 +148,23 @@
   Language Model Explorations with GPT4-Vision and Beyond**
  **[`arXiv 2023`]** *Liang Chen, Yichi Zhang, Shuhuai Ren, Haozhe Zhao, Zefan Cai, Yuchi Wang, Peiyi Wang, Tianyu Liu, Baobao Chang* [(arXiv)](http://arxiv.org/abs/2310.02071) [(pdf)](./Towards%20End-to-End%20Embodied%20Decision%20Making%20via%20Multi-modal%20Large%20Language%20Model%20-%20Explorations%20with%20GPT4-Vision%20and%20Beyond.pdf) [(Notes)](./ARI_Notes/PCA-EVAL.md) (Citation: 0)
 
+    - Introduce a new **benchmark** **PCA-EVAL**: Perception, Cognition, and Action. 
+    - Proposed **HOLMES**, a multi-agent cooperation framework that allows LLMs to leverage MLLMs and APIs to gather multimodal information for informed decision-making.
+
 
  <br>
 
  - **VoxPoser Composable 3D Value Maps for Robotic Manipulation with
   Language Models**
- **[`arXiv 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) [(Notes)](./ARI_Notes/voxposer.md) (Citation: 98)
-
+ **[`CoRL 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) [(Notes)](./ARI_Notes/voxposer.md) (Citation: 98)
+   - **Objective**: aim to **synthesize** *robot trajectories*, i.e., a dense sequence of 6-DoF end-effector waypoints, for a large variety of manipulation tasks given an open-set of *instructions* and an open-set of *objects*.
 
   
 
 <br >
 
 - **Voyager An Open-Ended Embodied Agent with Large Language Models**
- **[`arXiv 2023`]** *Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar* [(arXiv)](http://arxiv.org/abs/2305.16291) [(pdf)](./Voyager%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/voyager.md) (Citation: 254)
+ **[`NeurIPS 2023`]** *Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar* [(arXiv)](http://arxiv.org/abs/2305.16291) [(pdf)](./Voyager%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/voyager.md) (Citation: 254)
     - **Voyager** is the **first LLM-powered embodied lifelong learning agent** that operates within the virtual realm of **Minecraft**.
     - It continuously **explores the Minecraft world**, acquires a diverse range of skills, and makes novel discoveries—all without any human intervention.
 
@@ -174,7 +177,7 @@
 ## Object Grounding
 
 - **RREx-BoT Remote Referring Expressions with a Bag of Tricks**
- **[`arXiv 2023`]** *Gunnar A. Sigurdsson, Jesse Thomason, Gaurav S. Sukhatme, Robinson Piramuthu* [(arXiv)](http://arxiv.org/abs/2301.12614) [(pdf)](./RREx-BoT%20Remote%20Referring%20Expressions%20with%20a%20Bag%20of%20Tricks.pdf)[(Notes)](./ARI_Notes/rrex-bot.md) (Citation: 0)
+ **[`IROS 2023`]** *Gunnar A. Sigurdsson, Jesse Thomason, Gaurav S. Sukhatme, Robinson Piramuthu* [(arXiv)](http://arxiv.org/abs/2301.12614) [(pdf)](./RREx-BoT%20Remote%20Referring%20Expressions%20with%20a%20Bag%20of%20Tricks.pdf)[(Notes)](./ARI_Notes/rrex-bot.md) (Citation: 0)
   - Using a generic vision-language scoring model with minor modifications for 3D encoding and operating in an embodied environment. 
 
 

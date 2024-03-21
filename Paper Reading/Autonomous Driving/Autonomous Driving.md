@@ -19,7 +19,7 @@
 <br />
 
 - **Decision-Making Technology for Autonomous Vehicles Learning-Based Methods Applications and Future Outlook**
- **[`arXiv 2021`]** *Qi Liu, Xueyuan Li, Shihua Yuan, Zirui Li* [(arXiv)](http://arxiv.org/abs/2107.01110) [(pdf)]() (Citation: )
+ **[`arXiv 2021`]** *Qi Liu, Xueyuan Li, Shihua Yuan, Zirui Li* [(arXiv)](http://arxiv.org/abs/2107.01110) [(pdf)](./Survey/Decision-Making%20Technology%20for%20Autonomous%20Vehicles%20Learning-Based%20Methods%20Applications%20and%20Future%20Outlook.pdf) (Citation: 53)
 
 <br />
 
@@ -60,6 +60,7 @@
 
 - **Generating adversarial driving scenarios in high-fidelity simulators**
  **[`ICRA 2019`]** *Yasasa Abeysirigoonawardena, Florian Shkurti, and Gregory Dudek* [(IEEE)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8793740) [(pdf)](./RL-based/Generating%20adversarial%20driving%20scenarios%20in%20high-fidelity%20simulators.pdf) [(Notes)](./AD_notes/adversarialDriving.md) (Citation: 120)
+   - Use Bayesian Optimization to generate *adversarial self-driving policies*, and *increase the risk of collision with simulated pedestrians and vehicles*
 
 
 ---
@@ -76,7 +77,7 @@
 
 <br />
 
-- **LaMPilot An Open Benchmark Dataset for Autonomous Driving with Language Model Programs**
+- **LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs**
  **[`arXiv 2023`]** *Yunsheng Ma, Can Cui, Xu Cao, Wenqian Ye, Peiran Liu, Juanwu Lu, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Aniket Bera, James M. Rehg, Ziran Wang* [(arXiv)](http://arxiv.org/abs/2312.04372) [(Notes)](./AD_notes/LaMPilot.md) [(pdf)](./../LLM-based%20AD/LaMPilot%20An%20Open%20Benchmark%20Dataset%20for%20Autonomous%20Driving%20with%20Language%20Model%20Programs.pdf) (Citation: 0)
    - Introduce **LaMPilot** Benchmark specifically designed to quantitatively evaluate the efficacy of Large Language MOdels (LLMs) in translating human driectives into actionable driving policies.
   ![alt text](./imgs/LaMPilot.png)
@@ -84,7 +85,7 @@
 
 <br />
 
-- **Reason2Drive Towards Interpretable and Chain-based Reasoning for
+- **Reason2Drive: Towards Interpretable and Chain-based Reasoning for
   Autonomous Driving**
  **[`arXiv 2023`]** *Ming Nie, Renyuan Peng, Chunwei Wang, Xinyue Cai, Jianhua Han, Hang Xu, Li Zhang* [(arXiv)](http://arxiv.org/abs/2312.03661) [(Notes)](./AD_notes/reason2drive.md) [(pdf)](./LLM-based%20AD/Reason2Drive%20-%20Towards%20Interpretable%20and%20Chain-based%20Reasoning%20for%20Autonomous%20Driving.pdf) (Citation: 0)
   - Research in Autonomous System using LLMs is hindered by the lack of datasets with annotated reasoning chains that explain the decision-making processes in driving. To bridge this gap, this work proposes **Reason2Drive**, a benchmark dataset with over 600K video-text pairs.
@@ -125,7 +126,7 @@
 
 <br >
 
-- **DriveGPT4 Interpretable End-to-end Autonomous Driving via Large
+- **DriveGPT4: Interpretable End-to-end Autonomous Driving via Large
   Language Model**
  **[`arXiv 2023`]** *Zhenhua Xu, Yujia Zhang, Enze Xie, Zhen Zhao, Yong Guo, Kwan-Yee. K. Wong, Zhenguo Li, Hengshuang Zhao* [(arXiv)](http://arxiv.org/abs/2310.01412) [(Note)](./AD_notes/driveGPT4.md) [(pdf)](./LLM-based%20AD/DriveGPT4%20Interpretable%20End-to-end%20Autonomous%20Driving%20via%20Large.pdf) (Citation: 28)
   - LLM-based Autonomous driving
@@ -138,10 +139,10 @@
 
 <br >
 
-- **GPT-Driver Learning to Drive with GPT**
+- **GPT-Driver: Learning to Drive with GPT**
  **[`NeurIPS 2023`]** *Jiageng Mao, Yuxi Qian, Junjie Ye, Hang Zhao, Yue Wang* [(arXiv)](http://arxiv.org/abs/2310.01415) [(pdf)](./LLM-based%20AD/GPT-Driver%20Learning%20to%20Drive%20with%20GPT.pdf) [(Notes)](./AD_notes/driveGPT4.md) (Citation: 32)
   - Convert the AD motion planning problem as a language task
-  - Propose a Prompt-Reason-Planning framework for a GPT-3.5 to predict vehicle's future trajectory
+  - Propose a **Prompt-Reason-Planning** framework for a GPT-3.5 to predict vehicle's future trajectory
   - Use OpenAI fine-tune API to fine-tune the model
 
 
@@ -159,14 +160,14 @@
 <br >
 
 
-- **ALT-Pilot Autonomous navigation with Language augmented Topometric maps**
+- **ALT-Pilot: Autonomous navigation with Language augmented Topometric maps**
  **[`arXiv 2023`]** *Mohammad Omama, Pranav Inani, Pranjal Paul, Sarat Chandra Yellapragada, Krishna Murthy Jatavallabhula, Sandeep Chinchali, Madhava Krishna* [(arXiv)](http://arxiv.org/abs/2310.02324) [(pdf)](./LLM-based%20AD/ALT-Pilot%20-%20Autonomous%20navigation%20with%20Language%20augmented%20Topometric%20maps.pdf) [(Notes)](./AD_notes/alt_pilot.md) (Citation: 3)
 
   - Use CLIP in the Particle Filter to update vehicle's position 
 
 <br >
 
-- **LanguageMPC Large Language Models as Decision Makers for Autonomous
+- **LanguageMPC: Large Language Models as Decision Makers for Autonomous
   Driving**
  **[`arXiv 2023`]** *Hao Sha, Yao Mu, Yuxuan Jiang, Li Chen, Chenfeng Xu, Ping Luo, Shengbo Eben Li, Masayoshi Tomizuka, Wei Zhan, Mingyu Ding* [(arXiv)](http://arxiv.org/abs/2310.03026) [(pdf)](./LLM-based%20AD/LanguageMPC%20Large%20Language%20Models%20as%20Decision%20Makers%20for%20Autonomous.pdf) [(Notes)](./AD_notes/LanguageMPC.md) (Citation: 35)
 
@@ -174,17 +175,43 @@
 
 <br >
 
-- **SurrealDriver Designing Generative Driver Agent Simulation Framework in
+- **SurrealDriver: Designing Generative Driver Agent Simulation Framework in
   Urban Contexts based on Large Language Model**
  **[`arXiv 2023`]** *Ye Jin, Xiaoxi Shen, Huiling Peng, Xiaoan Liu, Jingli Qin, Jiayang Li, Jintao Xie, Peizhong Gao, Guyue Zhou, Jiangtao Gong* [(arXiv)](http://arxiv.org/abs/2309.13193) [(pdf)](./LLM-based%20AD/SurrealDriver%20Designing%20Generative%20Driver%20Agent%20Simulation%20Framework%20in.pdf) [(Notes)](./AD_notes/surrealdriver.md) (Citation: 14)
 
    - Proposed a LLM-based AD agent. Use text to describe perception and action. 
    - Use human driver experience to generate some examples and few-shot learning to finetune the LLM. 
 
+<br >
 
+- **DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large
+  Language Models**
+ **[`ICLR 2024`]** *Licheng Wen, Daocheng Fu, Xin Li, Xinyu Cai, Tao Ma, Pinlong Cai, Min Dou, Botian Shi, Liang He, Yu Qiao* [(arXiv)](http://arxiv.org/abs/2309.16292) [(pdf)](./LLM-based%20AD/DiLu%20A%20Knowledge-Driven%20Approach%20to%20Autonomous%20Driving%20with%20Large.pdf) [(Notes)](./AD_notes/dilu.md) [(Code)](https://github.com/PJLab-ADG/DiLu) (Citation: 34)
+
+  - Pure LLM-based AD agent. Use text to describe perception and action.
+  - Use HighwayEnv as the simulation program. 
+  - Useful in defining the agent for other tasks. 
+
+<br >
+
+- **Driving with LLMs Fusing Object-Level Vector Modality for Explainable
+  Autonomous Driving**
+ **[`arXiv 2023`]** *Long Chen, Oleg Sinavski, Jan Hünermann, Alice Karnsund, Andrew James Willmott, Danny Birch, Daniel Maund, Jamie Shotton* [(arXiv)](http://arxiv.org/abs/2310.01957) [(pdf)](./LLM-based%20AD/Driving%20with%20LLMs%20Fusing%20Object-Level%20Vector%20Modality%20for%20Explainable.pdf) [(Notes)](./AD_notes/drivingwithLLM.md) (Citation: 26)
+
+  - Train a Transformer to convert driving situation into vectors and feed them into a LLM to ask LLM generate actions. 
+  - Create a Q & A dataset based on a simulation program. 
 
 ---
 
+### DataSet
+
+- **Textual Explanations for Self-Driving Vehicles**
+ **[`ECCV 2018`]** *Jinkyu Kim, Anna Rohrbach, Trevor Darrell, John Canny, Zeynep Akata* [(arXiv)](http://arxiv.org/abs/1807.11546) [(pdf)](./dataset/Textual%20Explanations%20for%20Self-Driving%20Vehicles.pdf) [(Notes)](./AD_notes/bdd-x.md) (Citation: 280)
+
+<br >
+
+- **Talk2Car Taking Control of Your Self-Driving Car**
+ **[`arXiv 2019`]** *Thierry Deruyttere, Simon Vandenhende, Dusan Grujicic, Luc Van Gool, Marie-Francine Moens* [(arXiv)](http://arxiv.org/abs/1909.10838) [(pdf)](./dataset/Talk2Car%20Taking%20Control%20of%20Your%20Self-Driving%20Car.pdf) [(Notes)](./AD_notes/talk2car.md) (Citation: 75)
 
 
 
