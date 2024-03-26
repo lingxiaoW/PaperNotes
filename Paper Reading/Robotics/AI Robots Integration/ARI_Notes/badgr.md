@@ -12,6 +12,13 @@
       - Data is saved to an external SSD. 
     - **Data Collection**:
       - Off-policy data collection: ramdon exploration
+    - **Self-supervised data labelling**
+      - Using a pre-defined policy to sefl-label the collected data into three events. 
+        - *Collision*: A collision event is calculated as occurring when, in urban environments, the LIDAR measures an obstacle to be close or, in off-road environments, when the IMU detects a sudden drop in linear acceleration and angular velocity magnitudes
+        - *Bumpiness*: A bumpiness event is calculated as occurring when the angular velocity magnitudes measured by the IMU are above a certain threshold.
+        - *Position*: The position is determined by an onboard state estimator that fuses wheel odometry and the IMU to form a local position estimate.
+      - BADGR can then train a model to predict which actions lead to which navigational events.
+
     - **Predictive Model**:
       - Input: Sensor observations and a sequence of future intended actions
       - Output: future navigational events.
@@ -20,11 +27,13 @@
         </p>
 
         - CNN: process RGB images to get features for LSTM Inputs
-        - LSTM: takes $H$ actions in a sequential fashion and produces $H$ outputs. 
-          - These $H$ outputs are then passed through additional fully connected layers to predict all $K$ **events** for all $H$ future time steps.  
+        - LSTM: takes $H$ **future** actions in a sequential fashion and produces $H$ outputs. 
+          - These $H$ outputs are then passed through additional fully connected layers to predict all $K$ **events** for all $H$ **future** time steps.  
           - These predicted future **events**, such as position, if the robot collided, and if the robot drove over bumpy terrain, enable a planner to select actions that achieve desirable events, such reaching a goal, and avoid undesirable events, such as collisions and bumpy terrain. 
+          - **Three events**: collision, bumpiness, and position. 
+        - BADGR can predict which action will lead to which event. 
     - **Planning**
       - **Objective**: Given the trained neural network predictive model, this model can then be used at test time to plan and execute desirable actions.
-      - **Reward function**: We first define a reward function that encodes what we want the robot to do in terms of the model’s predicted future events.
+      - **Reward function**: We first define a reward function that *encodes what we want the robot to do in terms of the model’s predicted future events.*
         - For example, the reward function could encourage driving towards a goal while discouraging collisions or driving over bumpy terrain.
-        - Find the optimal action using zeroth order stochastic optimizer. 
+        - To find the optimal actio, we use **zeroth order stochastic optimizer**. 

@@ -230,12 +230,15 @@
 - **BADGR An Autonomous Self-Supervised Learning-Based Navigation System**
  **[`arXiv 2020`]** *Gregory Kahn, Pieter Abbeel, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2002.05700) [(pdf)](./BADGR%20-%20An%20Autonomous%20Self-Supervised%20Learning-Based%20Navigation%20System.pdf) [(Notes)](./ARI_Notes/badgr.md) (Citation: 230)
 
+  - Proposed a learning methot predict robot future navigation events (i.e., positions, collisions, bumps) based on the current image observation.
+  - With this predicted events, define a reward function and optimize it using a zeroth order stochastic optimizer. 
 
 <br />
 
 - **ViNG Learning Open-World Navigation with Visual Goals**
  **[`ICRA 2021`]** *Dhruv Shah, Benjamin Eysenbach, Gregory Kahn, Nicholas Rhinehart, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2012.09812) [(pdf)](./ViNG%20-%20Learning%20Open-World%20Navigation%20with%20Visual%20Goals.pdf) [(Notes)](./ARI_Notes/ving.md) (Citation: 66)
     - Propose a learning-based navigation system for reaching visually indicated goals and demonstrate this system on a real mobile robot platform.   
+    - Deal with navigation problem without a map, using an image of target location as the navigation goal. 
   
 <br />
 

@@ -5,7 +5,8 @@
   <img src="./../imgs/talk2drive.png" width="50%">
 </p>
 
-  - This paper presents a Talk-to-Drive LLM to process verbal commands from humans and make autonomous driving decisions with contextual information.  
+  - **Objective:** 
+    - This paper presents a Talk-to-Drive LLM to process verbal commands from humans and make autonomous driving decisions with contextual information.  
   - **Problems on traditional autonomous driving**:
     - Traditional AD rely on manually configured human preferences. 
     - Conventional systems struggle to interpret and adapt to the abstract instructions from humans. 
@@ -17,5 +18,19 @@
     - **LLM output** icnludes executable codes used for planning and control. The generated code adjust control parameters like the *look-ahead distance* and *look-ahead ratio* to optimize pure pursuit performance.
     - The LLMs are trained using **in-context learning**, coupled with **chain-of-thought prompting**. 
       - In-context learning (ICL): is a method of prompt engineering where demonstrations of the task are provided to teh model as part of the prompt in natural language. With ICL, you can use off-the-shelf LLMs to solve novel tasks without the need for **fine-tuning**.
+  - **Framework**:
+    - **1st step**: Receive verbal commands from humans.
+      - Using Whisper to convert human languages into text $I$.
+      - Get environmental data including weather updates (Openweather API), traffic conditions (OpenStreetMap API), and local traffic rules information (TomTom API). -> $C$.
+    - **2nd step**: In-context learning with LLM + Chain of thought
+    - **3rd step**: LLM generates low-leel controlls.
+      - LLM's output includes look-ahead distance and look-ahead ratio. 
+      - These action codes take the form of ROS topic commands, directing the autonomous driving system based on **Autoware** to modify its trajectory following configuration. 
+  <p align="center">
+  <img src="./../imgs/llm_realworld_framework.png" width="80%">  
+  </p>  
+  
+  - **Experiment**:
+    - **Instruction** $I$: "In" 
   - **Problem of LLM-based Agent in AD**:
     - LLM's **latency** is too large.
