@@ -139,16 +139,6 @@
 
 <br >
 
-- **GPT-Driver: Learning to Drive with GPT**
- **[`NeurIPS 2023`]** *Jiageng Mao, Yuxi Qian, Junjie Ye, Hang Zhao, Yue Wang* [(arXiv)](http://arxiv.org/abs/2310.01415) [(pdf)](./LLM-based%20AD/GPT-Driver%20Learning%20to%20Drive%20with%20GPT.pdf) [(Notes)](./AD_notes/driveGPT4.md) (Citation: 32)
-  - Convert the AD motion planning problem as a language task
-  - Propose a **Prompt-Reason-Planning** framework for a GPT-3.5 to predict vehicle's future trajectory
-  - Use OpenAI fine-tune API to fine-tune the model
-
-
-
-<br >
-
 - **Planning-oriented Autonomous Driving**
  **[`CVPR 2023`]** *Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li* [(arXiv)](http://arxiv.org/abs/2212.10156) [(pdf)](./LLM-based%20AD/Planning-oriented%20Autonomous%20Driving.pdf) [(Notes)](./AD_notes/uniAD.md) (Citation: 153)
   - Proposed a **Perception -> Prediction -> Planning** framework for end-to-end motion planning in AD.
@@ -156,6 +146,17 @@
     <p align="center">
     <img src="./imgs/uniAD_model.png" width="100%">
     </p>  
+
+
+<br >
+
+- **GPT-Driver: Learning to Drive with GPT**
+ **[`NeurIPS 2023`]** *Jiageng Mao, Yuxi Qian, Junjie Ye, Hang Zhao, Yue Wang* [(arXiv)](http://arxiv.org/abs/2310.01415) [(pdf)](./LLM-based%20AD/GPT-Driver%20Learning%20to%20Drive%20with%20GPT.pdf) [(Notes)](./AD_notes/gpt_driver.md) (Citation: 32)
+  - A follow-up work of Planning-oriented AD. 
+  - Convert the AD motion planning problem as a language task
+  - Propose a **Prompt-Reason-Planning** framework for a GPT-3.5 to predict vehicle's future trajectory
+  - Use OpenAI fine-tune API to fine-tune the model in an open-loop fashion, and Fine-tune is better than in-context learning
+
 
 <br >
 
