@@ -261,7 +261,19 @@
   Autonomous Practicing**
  **[`arXiv 2023`]** *Kyle Stachowicz, Dhruv Shah, Arjun Bhorkar, Ilya Kostrikov, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2304.09831) [(pdf)](./FastRLAP%20-%20A%20System%20for%20Learning%20High-Speed%20Driving%20via%20Deep%20RL%20and%20Autonomous%20Practicing.pdf) [(Notes)](./ARI_Notes/fastrlap.md) (Citation: 3)
   - **Objective**: Design a deep learning model to control a RC car to drive aggressively from visual observations using reinforcement learning.
+
+<br />
+
+- **Can an Embodied Agent Find Your “Cat-shaped Mug”? LLM-Based Zero-Shot Object Navigation**
+ **[`IEEE RAL 2023`]** *Dorbala, Vishnu Sashank and Mullen Jr, James F and Manocha, Dinesh* [(IEEE)](https://ieeexplore.ieee.org/abstract/document/10373065) [(pdf)](./Can_an_Embodied_Agent_Find_Your_Cat-shaped_Mug_LLM-Based_Zero-Shot_Object_Navigation.pdf) [(Notes)](./ARI_Notes/LLM-based_zero_shot_object_navigation.md) (Citation: 20)
+  * **Objective**: Vision-based navigation using YOLO for object detection, GLIP for object grounding, and LLM for decision-making and reasoning. 
  
+ <br />
+
+ - **NavGPT Explicit Reasoning in Vision-and-Language Navigation with Large
+  Language Models**
+ **[`AAAI 2023`]** *Gengze Zhou, Yicong Hong, Qi Wu* [(arXiv)](http://arxiv.org/abs/2305.16986) [(pdf)](./NavGPT%20-%20Explicit%20Reasoning%20in%20Vision-and-Language%20Navigation%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/navgpt.md) (Citation: 40)
+
   
 
 
