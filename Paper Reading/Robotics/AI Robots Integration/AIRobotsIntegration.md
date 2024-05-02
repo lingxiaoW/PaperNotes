@@ -43,6 +43,16 @@
 ## Useful Sentences
 * It has been well-established that language acts as a valuable interface fro non-experts to communicate with robots [cite: toward understanding natural language directions 2010]. 
 
+* **Robot Learning Challenges**:
+  * Source: [link](https://blog.google/technology/ai/google-deepmind-rt2-robotics-vla-model/) 
+  * The pursuit of helpful robots has always been a herculean effort, because a robot capable of doing general tasks in the world needs to be able to handle complex, abstract tasks in highly variable environments — especially ones it's never seen before.
+  * Unlike chatbots, robots need **“grounding”** in the real world and their abilities.
+    * Their training isn’t just about, say, learning everything there is to know about an apple: how it grows, its physical properties, or even that one purportedly landed on Sir Isaac Newton’s head.
+    * A robot needs to be able to recognize an apple in context, distinguish it from a red ball, understand what it looks like, and most importantly, know how to pick it up.
+  * That’s historically required training robots on billions of data points, firsthand, across every single object, environment, task and situation in the physical world — a prospect so time consuming and costly as to make it impractical for innovators.
+  * The capability of LLM in robotics:
+    * Because RT-2 is able to transfer knowledge from a large corpus of web data, it already has an idea of what trash is and can identify it without explicit training. 
+
 ---
 
 ## Object Manipulation
@@ -55,6 +65,12 @@
 ---
 
 ## Robotic Transformer
+
+
+### 2021
+
+- **CLIPort What and Where Pathways for Robotic Manipulation**
+ **[`arXiv 2021`]** *Mohit Shridhar, Lucas Manuelli, Dieter Fox* [(arXiv)](http://arxiv.org/abs/2109.12098) [(pdf)](./CLIPort%20-%20What%20and%20Where%20Pathways%20for%20Robotic%20Manipulation.pdf) [(Notes)](./ARI_Notes/CLIPort.md) (Citation: 432)
 
 
 ### 2022
@@ -97,6 +113,15 @@
   - Use LLM to break-down a complex task into multiple executable actions. 
 
 <br>
+
+- **Perceiver-Actor A Multi-Task Transformer for Robotic Manipulation**
+ **[`arXiv 2022`]** *Mohit Shridhar, Lucas Manuelli, Dieter Fox* [(arXiv)](http://arxiv.org/abs/2209.05451) [(pdf)](./Perceiver-Actor%20-%20A%20Multi-Task%20Transformer%20for%20Robotic%20Manipulation.pdf) [(Notes)](./ARI_Notes/perceiver-actor.md) (Citation: 264)
+   - Present a robotic transformer agent **PreAct**, which is based on an exisiting **Perceiver** **Transformer**. 
+     - Language Encoder is **CLIP**.
+     - Input Vision are **3D** **voxels**, splitted into small cells (similar to ViT).
+     - Output is **robot** **action**. 
+
+
 
 
 
