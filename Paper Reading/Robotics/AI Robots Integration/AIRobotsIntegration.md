@@ -61,6 +61,12 @@
  **[`CVPR 2023`]** *Haoran Geng, Helin Xu, Chengyang Zhao, Chao Xu, Li Yi, Siyuan Huang, He Wang* [(arXiv)](http://arxiv.org/abs/2211.05272) [(pdf)](./GAPartNet%20Cross-Category%20Domain-Generalizable%20Object%20Perception%20and%20Manipulation%20via%20Generalizable%20and%20Actionable%20Parts.pdf) [(Note)](./ARI_Notes/GAPartNet.md) (Citation: 8)
   - Propose a **G**eneralizable and **A**ctionable **Parts** (GAParts)
 
+<br>
+
+- **Transporter Networks Rearranging the Visual World for Robotic
+  Manipulation**
+ **[`arXiv 2020`]** *Andy Zeng, Pete Florence, Jonathan Tompson, Stefan Welker, Jonathan Chien, Maria Attarian, Travis Armstrong, Ivan Krasin, Dan Duong, Ayzaan Wahid, Vikas Sindhwani, Johnny Lee* [(arXiv)](http://arxiv.org/abs/2010.14406) [(pdf)](./Transporter%20Networks%20Rearranging%20the%20Visual%20World%20for%20Robotic.pdf) [(Notes)](./ARI_Notes/transporter.md) (Citation: 342)
+
 
 ---
 
@@ -71,6 +77,7 @@
 
 - **CLIPort What and Where Pathways for Robotic Manipulation**
  **[`arXiv 2021`]** *Mohit Shridhar, Lucas Manuelli, Dieter Fox* [(arXiv)](http://arxiv.org/abs/2109.12098) [(pdf)](./CLIPort%20-%20What%20and%20Where%20Pathways%20for%20Robotic%20Manipulation.pdf) [(Notes)](./ARI_Notes/CLIPort.md) (Citation: 432)
+  - A fellow-up work of Transporter, which adds CLIP into the Transporter to enable it understand language inputs. 
 
 
 ### 2022
