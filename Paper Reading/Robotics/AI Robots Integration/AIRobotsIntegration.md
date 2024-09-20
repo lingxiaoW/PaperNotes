@@ -40,16 +40,44 @@
 
 ---
 
+## Useful Sentences
+* It has been well-established that language acts as a valuable interface fro non-experts to communicate with robots [cite: toward understanding natural language directions 2010]. 
+
+* **Robot Learning Challenges**:
+  * Source: [link](https://blog.google/technology/ai/google-deepmind-rt2-robotics-vla-model/) 
+  * The pursuit of helpful robots has always been a herculean effort, because a robot capable of doing general tasks in the world needs to be able to handle complex, abstract tasks in highly variable environments — especially ones it's never seen before.
+  * Unlike chatbots, robots need **“grounding”** in the real world and their abilities.
+    * Their training isn’t just about, say, learning everything there is to know about an apple: how it grows, its physical properties, or even that one purportedly landed on Sir Isaac Newton’s head.
+    * A robot needs to be able to recognize an apple in context, distinguish it from a red ball, understand what it looks like, and most importantly, know how to pick it up.
+  * That’s historically required training robots on billions of data points, firsthand, across every single object, environment, task and situation in the physical world — a prospect so time consuming and costly as to make it impractical for innovators.
+  * The capability of LLM in robotics:
+    * Because RT-2 is able to transfer knowledge from a large corpus of web data, it already has an idea of what trash is and can identify it without explicit training. 
+
+---
+
 ## Object Manipulation
 - **GAPartNet Cross-Category Domain-Generalizable Object Perception and
   Manipulation via Generalizable and Actionable Parts**
  **[`CVPR 2023`]** *Haoran Geng, Helin Xu, Chengyang Zhao, Chao Xu, Li Yi, Siyuan Huang, He Wang* [(arXiv)](http://arxiv.org/abs/2211.05272) [(pdf)](./GAPartNet%20Cross-Category%20Domain-Generalizable%20Object%20Perception%20and%20Manipulation%20via%20Generalizable%20and%20Actionable%20Parts.pdf) [(Note)](./ARI_Notes/GAPartNet.md) (Citation: 8)
   - Propose a **G**eneralizable and **A**ctionable **Parts** (GAParts)
 
+<br>
+
+- **Transporter Networks Rearranging the Visual World for Robotic
+  Manipulation**
+ **[`arXiv 2020`]** *Andy Zeng, Pete Florence, Jonathan Tompson, Stefan Welker, Jonathan Chien, Maria Attarian, Travis Armstrong, Ivan Krasin, Dan Duong, Ayzaan Wahid, Vikas Sindhwani, Johnny Lee* [(arXiv)](http://arxiv.org/abs/2010.14406) [(pdf)](./Transporter%20Networks%20Rearranging%20the%20Visual%20World%20for%20Robotic.pdf) [(Notes)](./ARI_Notes/transporter.md) (Citation: 342)
+
 
 ---
 
 ## Robotic Transformer
+
+
+### 2021
+
+- **CLIPort What and Where Pathways for Robotic Manipulation**
+ **[`arXiv 2021`]** *Mohit Shridhar, Lucas Manuelli, Dieter Fox* [(arXiv)](http://arxiv.org/abs/2109.12098) [(pdf)](./CLIPort%20-%20What%20and%20Where%20Pathways%20for%20Robotic%20Manipulation.pdf) [(Notes)](./ARI_Notes/CLIPort.md) (Citation: 432)
+  - A fellow-up work of Transporter, which adds CLIP into the Transporter to enable it understand language inputs. 
 
 
 ### 2022
@@ -85,6 +113,24 @@
 
 
 <br>
+
+- **Language Models as Zero-Shot Planners Extracting Actionable Knowledge
+  for Embodied Agents**
+ **[`arXiv 2022`]** *Wenlong Huang, Pieter Abbeel, Deepak Pathak, Igor Mordatch* [(arXiv)](http://arxiv.org/abs/2201.07207) [(pdf)](./Language%20Models%20as%20Zero-Shot%20Planners%20Extracting%20Actionable%20Knowledge.pdf) [(Notes)](./ARI_Notes/zero-shotPlanner.md) (Citation: 540)
+  - Use LLM to break-down a complex task into multiple executable actions. 
+
+<br>
+
+- **Perceiver-Actor A Multi-Task Transformer for Robotic Manipulation**
+ **[`arXiv 2022`]** *Mohit Shridhar, Lucas Manuelli, Dieter Fox* [(arXiv)](http://arxiv.org/abs/2209.05451) [(pdf)](./Perceiver-Actor%20-%20A%20Multi-Task%20Transformer%20for%20Robotic%20Manipulation.pdf) [(Notes)](./ARI_Notes/perceiver-actor.md) (Citation: 264)
+   - Present a robotic transformer agent **PreAct**, which is based on an exisiting **Perceiver** **Transformer**. 
+     - Language Encoder is **CLIP**.
+     - Input Vision are **3D** **voxels**, splitted into small cells (similar to ViT).
+     - Output is **robot** **action**. 
+
+
+
+
 
 ### 2023
  - **ChatGPT for Robotics Design Principles and Model Abilities**
@@ -134,20 +180,23 @@
   Language Model Explorations with GPT4-Vision and Beyond**
  **[`arXiv 2023`]** *Liang Chen, Yichi Zhang, Shuhuai Ren, Haozhe Zhao, Zefan Cai, Yuchi Wang, Peiyi Wang, Tianyu Liu, Baobao Chang* [(arXiv)](http://arxiv.org/abs/2310.02071) [(pdf)](./Towards%20End-to-End%20Embodied%20Decision%20Making%20via%20Multi-modal%20Large%20Language%20Model%20-%20Explorations%20with%20GPT4-Vision%20and%20Beyond.pdf) [(Notes)](./ARI_Notes/PCA-EVAL.md) (Citation: 0)
 
+    - Introduce a new **benchmark** **PCA-EVAL**: Perception, Cognition, and Action. 
+    - Proposed **HOLMES**, a multi-agent cooperation framework that allows LLMs to leverage MLLMs and APIs to gather multimodal information for informed decision-making.
+
 
  <br>
 
  - **VoxPoser Composable 3D Value Maps for Robotic Manipulation with
   Language Models**
- **[`arXiv 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) (Citation: 98)
-
+ **[`CoRL 2023`]** *Wenlong Huang, Chen Wang, Ruohan Zhang, Yunzhu Li, Jiajun Wu, Li Fei-Fei* [(arXiv)](http://arxiv.org/abs/2307.05973) [(pdf)](./VoxPoser%20Composable%203D%20Value%20Maps%20for%20Robotic%20Manipulation%20with%20LLMs.pdf) [(Notes)](./ARI_Notes/voxposer.md) (Citation: 98)
+   - **Objective**: aim to **synthesize** *robot trajectories*, i.e., a dense sequence of 6-DoF end-effector waypoints, for a large variety of manipulation tasks given an open-set of *instructions* and an open-set of *objects*.
 
   
 
 <br >
 
 - **Voyager An Open-Ended Embodied Agent with Large Language Models**
- **[`arXiv 2023`]** *Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar* [(arXiv)](http://arxiv.org/abs/2305.16291) [(pdf)](./Voyager%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/voyager.md) (Citation: 254)
+ **[`NeurIPS 2023`]** *Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar* [(arXiv)](http://arxiv.org/abs/2305.16291) [(pdf)](./Voyager%20An%20Open-Ended%20Embodied%20Agent%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/voyager.md) (Citation: 254)
     - **Voyager** is the **first LLM-powered embodied lifelong learning agent** that operates within the virtual realm of **Minecraft**.
     - It continuously **explores the Minecraft world**, acquires a diverse range of skills, and makes novel discoveries—all without any human intervention.
 
@@ -160,7 +209,7 @@
 ## Object Grounding
 
 - **RREx-BoT Remote Referring Expressions with a Bag of Tricks**
- **[`arXiv 2023`]** *Gunnar A. Sigurdsson, Jesse Thomason, Gaurav S. Sukhatme, Robinson Piramuthu* [(arXiv)](http://arxiv.org/abs/2301.12614) [(pdf)](./RREx-BoT%20Remote%20Referring%20Expressions%20with%20a%20Bag%20of%20Tricks.pdf)[(Notes)](./ARI_Notes/rrex-bot.md) (Citation: 0)
+ **[`IROS 2023`]** *Gunnar A. Sigurdsson, Jesse Thomason, Gaurav S. Sukhatme, Robinson Piramuthu* [(arXiv)](http://arxiv.org/abs/2301.12614) [(pdf)](./RREx-BoT%20Remote%20Referring%20Expressions%20with%20a%20Bag%20of%20Tricks.pdf)[(Notes)](./ARI_Notes/rrex-bot.md) (Citation: 0)
   - Using a generic vision-language scoring model with minor modifications for 3D encoding and operating in an embodied environment. 
 
 
@@ -211,14 +260,17 @@
 ## Vision-based Navigation
 
 - **BADGR An Autonomous Self-Supervised Learning-Based Navigation System**
- **[`arXiv 2020`]** *Gregory Kahn, Pieter Abbeel, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2002.05700) [(pdf)](./BADGR%20-%20An%20Autonomous%20Self-Supervised%20Learning-Based%20Navigation%20System.pdf) (Citation: 230)
+ **[`arXiv 2020`]** *Gregory Kahn, Pieter Abbeel, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2002.05700) [(pdf)](./BADGR%20-%20An%20Autonomous%20Self-Supervised%20Learning-Based%20Navigation%20System.pdf) [(Notes)](./ARI_Notes/badgr.md) (Citation: 230)
 
+  - Proposed a learning methot predict robot future navigation events (i.e., positions, collisions, bumps) based on the current image observation.
+  - With this predicted events, define a reward function and optimize it using a zeroth order stochastic optimizer. 
 
 <br />
 
 - **ViNG Learning Open-World Navigation with Visual Goals**
  **[`ICRA 2021`]** *Dhruv Shah, Benjamin Eysenbach, Gregory Kahn, Nicholas Rhinehart, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2012.09812) [(pdf)](./ViNG%20-%20Learning%20Open-World%20Navigation%20with%20Visual%20Goals.pdf) [(Notes)](./ARI_Notes/ving.md) (Citation: 66)
     - Propose a learning-based navigation system for reaching visually indicated goals and demonstrate this system on a real mobile robot platform.   
+    - Deal with navigation problem without a map, using an image of target location as the navigation goal. 
   
 <br />
 
@@ -241,7 +293,19 @@
   Autonomous Practicing**
  **[`arXiv 2023`]** *Kyle Stachowicz, Dhruv Shah, Arjun Bhorkar, Ilya Kostrikov, Sergey Levine* [(arXiv)](http://arxiv.org/abs/2304.09831) [(pdf)](./FastRLAP%20-%20A%20System%20for%20Learning%20High-Speed%20Driving%20via%20Deep%20RL%20and%20Autonomous%20Practicing.pdf) [(Notes)](./ARI_Notes/fastrlap.md) (Citation: 3)
   - **Objective**: Design a deep learning model to control a RC car to drive aggressively from visual observations using reinforcement learning.
+
+<br />
+
+- **Can an Embodied Agent Find Your “Cat-shaped Mug”? LLM-Based Zero-Shot Object Navigation**
+ **[`IEEE RAL 2023`]** *Dorbala, Vishnu Sashank and Mullen Jr, James F and Manocha, Dinesh* [(IEEE)](https://ieeexplore.ieee.org/abstract/document/10373065) [(pdf)](./Can_an_Embodied_Agent_Find_Your_Cat-shaped_Mug_LLM-Based_Zero-Shot_Object_Navigation.pdf) [(Notes)](./ARI_Notes/LLM-based_zero_shot_object_navigation.md) (Citation: 20)
+  * **Objective**: Vision-based navigation using YOLO for object detection, GLIP for object grounding, and LLM for decision-making and reasoning. 
  
+ <br />
+
+ - **NavGPT Explicit Reasoning in Vision-and-Language Navigation with Large
+  Language Models**
+ **[`AAAI 2023`]** *Gengze Zhou, Yicong Hong, Qi Wu* [(arXiv)](http://arxiv.org/abs/2305.16986) [(pdf)](./NavGPT%20-%20Explicit%20Reasoning%20in%20Vision-and-Language%20Navigation%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/navgpt.md) (Citation: 40)
+
   
 
 

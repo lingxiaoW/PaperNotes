@@ -11,6 +11,10 @@
     </p>
 
     - Use a visual navigation model (**VNM: ViNG**) to create a topological mental map of the environment using robot's observations. 
+      - This **VNM** predicts temporal distances between pairs of images and the corresponding actions to execute, providing an interface between images and embodiment.
+      - This **VNM** serves two purposes:
+        - Given a set of observations in the target environment, the distance predictions from the **VNM** can be used to construct a **topological graph**. 
+        - Given a "walk", comprising of a sequence of connected subgoals to a goal node, the **VNM** can navigate the robot along this plan.
     - Given free-form textual instructions, we use a pre-trained **LLM (GPT-3)** to decode the instructions into a sequence of textual landmarks. 
     - Use a vision-language model (**VLM: CLIP**) for grounding these textual landmarks into the topolical map, by inferring a joint likelihood over the landmarks and nodes. 
     - A novel search algorithm is then used to maximize a probabilistic objective, and find a plan for the robot, which is then executed by **VNM**.
