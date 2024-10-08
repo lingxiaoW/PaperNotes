@@ -307,5 +307,9 @@
  **[`AAAI 2023`]** *Gengze Zhou, Yicong Hong, Qi Wu* [(arXiv)](http://arxiv.org/abs/2305.16986) [(pdf)](./NavGPT%20-%20Explicit%20Reasoning%20in%20Vision-and-Language%20Navigation%20with%20Large%20Language%20Models.pdf) [(Notes)](./ARI_Notes/navgpt.md) (Citation: 40)
 
   
+## Audio Source Localization
+- **Sonicverse A Multisensory Simulation Platform for Embodied Household
+  Agents that See and Hear**
+ **[`ICRA 2023`]** *Ruohan Gao, Hao Li, Gokul Dharan, Zhuzhu Wang, Chengshu Li, Fei Xia, Silvio Savarese, Li Fei-Fei, Jiajun Wu* [(arXiv)](http://arxiv.org/abs/2306.00923) [(pdf)](./Sonicverse%20-%20A%20Multisensory%20Simulation%20Platform%20for%20Embodied%20Household%20Agents%20that%20See%20and%20Hear.pdf) [(Notes)](./ARI_Notes/sonicverse.md) (Citation: 35)
 
 
