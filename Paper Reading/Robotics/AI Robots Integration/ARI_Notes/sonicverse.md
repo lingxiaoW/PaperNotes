@@ -29,13 +29,14 @@
       - Continuous action space over robot wheel velocities
       - Observations: an RGB image, a depth map, the binaural audio received at its two ears, a bump sensor input, and its current pose with respect to the starting location.    
     - Multi-task Learning Framework
-      - Learn for semantic audio-visual navigation and occupancy map prediction
 
     <p align="center">
     <img src="./../../images/sonicverse-learning_framework.png" width="100%">
     </p>
       
-      - At each time step $t$, teh agent receives visual observation consisting of an RGB and a depth map, and binaural audio at the agent's left and right ears. 
+
+      - Learn for semantic audio-visual navigation and occupancy map prediction
+      - At each time step $t$, the agent receives visual observation consisting of an RGB and a depth map, and binaural audio at the agent's left and right ears. 
       - Extract visual and audio features from visual and audio encoders, respectively. 
       - Goal Predictor:
         - Inputs: audio feature and agent's current position 

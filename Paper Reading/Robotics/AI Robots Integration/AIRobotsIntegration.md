@@ -313,3 +313,5 @@
  **[`ICRA 2023`]** *Ruohan Gao, Hao Li, Gokul Dharan, Zhuzhu Wang, Chengshu Li, Fei Xia, Silvio Savarese, Li Fei-Fei, Jiajun Wu* [(arXiv)](http://arxiv.org/abs/2306.00923) [(pdf)](./Sonicverse%20-%20A%20Multisensory%20Simulation%20Platform%20for%20Embodied%20Household%20Agents%20that%20See%20and%20Hear.pdf) [(Notes)](./ARI_Notes/sonicverse.md) (Citation: 35)
 
 
+- **Semantic Audio-Visual Navigation**
+ **[`CVPR 2021`]** *Changan Chen, Ziad Al-Halah, Kristen Grauman* [(arXiv)](http://arxiv.org/abs/2012.11583) [(pdf)](./Semantic%20Audio-Visual%20Navigation.pdf) [(Notes)](./ARI_Notes/semantic_audio_visual.md) (Citation: 108)
