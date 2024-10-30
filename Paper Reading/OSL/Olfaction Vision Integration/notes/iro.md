@@ -13,3 +13,5 @@
    - Exploit Olfactory and Visual semantic information in odor source localization.
      - For example, a high concentration of gases related to rotten food suggest that somebody forgot about it.
      -  Semantic information can be exploited to automatically infer new robot tasks in order to maintain a set of pre-stablished human-like norms
+  - **E-nose**
+    - Multi-chamber electronic (MCE) nose
