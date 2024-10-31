@@ -15,3 +15,7 @@
      -  Semantic information can be exploited to automatically infer new robot tasks in order to maintain a set of pre-stablished human-like norms
   - **E-nose**
     - Multi-chamber electronic (MCE) nose
+  - **Semantic-Based Autonomous Gas Source Localization**
+    - Fuse classification results (vision + olfaction), a probabilistic Bayesian Framework is proposed to assign to each detected object a probaility of being the odor source. 
+    - Then, a path planning algorithm based on Markov Decision Process (MDP) merges probabilities with the navigation distances from the current location to the different objects. 
+    - Details can be found [here]

@@ -1,0 +1,2 @@
+- **Robotic Gas Source Localization With Probabilistic Mapping and Online Dispersion Simulation**
+ **[`IEEE Trans on Robotics 2024`]** *Pepe Ojeda, Javier Monroy, and Javier Gonzalez-Jimenez* [(IEEE)](https://ieeexplore.ieee.org/abstract/document/10592836) [(pdf)](./Robotic%20Gas%20Source%20Localization%20With%20Probabilistic%20Mapping%20and%20Online%20Dispersion%20Simulation.pdf) (Citation: 2)[(notes)](./notes/gsl_mapping.md)
