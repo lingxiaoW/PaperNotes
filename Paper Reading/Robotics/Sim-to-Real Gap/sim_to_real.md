@@ -6,3 +6,8 @@
 
 - **Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics a Survey**
  **[`arXiv 2020`]** *Wenshuai Zhao, Jorge Peña Queralta, Tomi Westerlund* [(arXiv)](http://arxiv.org/abs/2009.13303) [(pdf)](./Sim-to-Real%20Transfer%20in%20Deep%20Reinforcement%20Learning%20for%20Robotics%20a%20Survey.pdf) [(note)](./notes/survey.md) (Citation: 472)
+
+
+- **RL-CycleGAN Reinforcement Learning Aware Simulation-To-Real**
+ **[`CVPR 2020`]** *Kanishka Rao, Chris Harris, Alex Irpan, Sergey Levine, Julian Ibarz, Mohi Khansari* [(arXiv)](http://arxiv.org/abs/2006.09001) [(pdf)](./RL-CycleGAN%20Reinforcement%20Learning%20Aware%20Simulation-To-Real.pdf) [(Notes)](./notes/rl-cyclegan.md) (Citation: 202)
+ 
